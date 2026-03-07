@@ -227,11 +227,11 @@ const FruitsCatalog = () => {
 		<>
 			<div className="py-16 mb-5">
 				<div className="container mx-auto px-4">
-					<div className="row row-cols-lg-2 gy-4 align-items-center justify-content-center">
+					<div className="row row-cols-1 row-cols-lg-2 gy-4 align-items-center justify-content-center">
 						<div className="col">
 
 							<div className="d-flex align-items-center gap-12 mb-3">
-								<div className="w-12 h-12 bg-primary-subtle rounded-full d-flex align-items-center justify-contnt-center">
+								<div className="w-12 h-12 bg-primary-subtle rounded-full flex-shrink-0 d-flex align-items-center justify-contnt-center">
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
 										viewBox="0 0 24 24"

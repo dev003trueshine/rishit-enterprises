@@ -9,7 +9,7 @@ const Header = ({ className = "" }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navigationItems = [
-    { label: "Home", href: "/" },
+    { label: "Home", href: "https://dev003trueshine.github.io/rishit-enterprises/", external: true },
     { label: "Fruits Catalog", href: "/fruits-catalog" },
     { label: "Mango Products", href: "/mango-products" },
     { label: "About Us", href: "/about" },
@@ -30,25 +30,36 @@ const Header = ({ className = "" }) => {
       <div className="container mx-auto px-4">
         <div className="d-flex align-items-center justify-content-between h-20">
           {/* Logo Section */}
-          <Link
-            to="/homepage"
+          <a
+            href="https://dev003trueshine.github.io/rishit-enterprises/"
             className="d-flex align-items-center gap-2 hover:opacity-80 transition-organic"
           >
             {/* ...existing code... */}
             <img src={logo} alt="logo" className="img-fluid" style={{ width: "292px" }} />
-          </Link>
+          </a>
 
           {/* Desktop Navigation */}
           <nav className="d-none d-xl-flex align-items-center gap-5">
             {navigationItems.map((item) => (
-              <Link
-                key={item.href}
-                to={item.href}
-                className="header-link fw-medium  transition-organic position-relative group"
-              >
-                {item.label}
-                <span className="hover-line"></span>
-              </Link>
+              item.external ? (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className="header-link fw-medium  transition-organic position-relative group"
+                >
+                  {item.label}
+                  <span className="hover-line"></span>
+                </a>
+              ) : (
+                <Link
+                  key={item.href}
+                  to={item.href}
+                  className="header-link fw-medium  transition-organic position-relative group"
+                >
+                  {item.label}
+                  <span className="hover-line"></span>
+                </Link>
+              )
             ))}
           </nav>
 

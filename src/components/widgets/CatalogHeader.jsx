@@ -6,7 +6,7 @@ const CatalogHeader = ({ totalProducts, filteredProducts, sortBy, onSortChange }
     <div className="d-flex flex-column flex-lg-row align-items-lg-center justify-content-lg-between gap-3 mb-4">
       
       {/* Left Info */}
-      <div className="d-flex align-items-center gap-3">
+      <div className="d-flex align-items-center gap-3 flex-wrap">
         <div className="d-flex align-items-center gap-2">
           <FaShoppingBag size={22} className="text-primary" />
           <h2 className="fw-bold fs-4 mb-0">Fresh Fruits Catalog</h2>

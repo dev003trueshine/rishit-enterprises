@@ -132,7 +132,7 @@ export default function SeasonalCalendar() {
                       key={fruit.id}
                       className="bg-card rounded-xl p-6 shadow-organic shadow-card-md-hover"
                     >
-                      <div className="d-flex align-items-start justify-content-between mb-3">
+                      <div className="d-flex align-items-start flex-wrap gap-lg-3 gap-2 justify-content-between mb-3">
                         <div className="d-flex align-items-center gap-12">
                           <div
                             className={`w-12 h-12 rounded-full ${fruit.color} d-flex align-items-center justify-content-center text-2xl`}

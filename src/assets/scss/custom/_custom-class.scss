@@ -1368,9 +1368,25 @@ Max Width css
     .gap-48 {
         gap: 2rem;
     }
+        .p-12 {
+        padding: 2rem !important;
+    }
+
+    .py-24 {
+        padding-block-start: 3rem !important;
+        padding-block-end: 3rem !important;
+    }
 }
 
 @media (max-width: 768px) {
+        .p-12 {
+        padding: 1rem !important;
+    }
+
+    .py-24 {
+        padding-block-start: 2rem !important;
+        padding-block-end: 2rem !important;
+    }
     h1 {
         font-size: 2.25rem;
     }

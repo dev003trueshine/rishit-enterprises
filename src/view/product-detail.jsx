@@ -203,7 +203,7 @@ const ProductDetail = () => {
 
               {/* Price */}
               <div className="bg-warning-subtle rounded-lg p-6 border-l-4 mt-4">
-                <div className="d-flex align-items-center gap-2">
+                <div className="d-flex align-items-center flex-wrap gap-2">
                   <span className="fw-bold text-4xl text-primary">₹450</span>
                   <span className="text-lg">/Kg</span>
                   <span className="text-lg text-decoration-line-through">₹600</span>
@@ -662,9 +662,9 @@ const ProductDetail = () => {
 
         <div className="mb-12">
           {/* Header */}
-          <div className="d-flex align-items-center justify-content-between">
+          <div className="d-flex align-items-center justify-content-between flex-wrap gap-3">
             <h3 className="fw-bold text-2xl text-primary">You May Also Like</h3>
-            <a href="#" className="text-sm fw-medium btn btn-link d-flex align-items-center gap-1">
+            <a href="#" className="text-sm fw-medium btn btn-link p-0 d-flex align-items-center gap-1">
               View All
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -679,9 +679,6 @@ const ProductDetail = () => {
               </svg>
             </a>
           </div>
-
-          {/* Product Grid */}
-          <div className="d-grid grid-cols-2 md-grid-cols-4 gap-3 mt-4 mb-12"></div>
 
           {/* Feature Cards */}
           <div className="rounded-lg p-8">
