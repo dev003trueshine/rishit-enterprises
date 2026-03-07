@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/rishit-enterprises/static/css/main.e2372866.css",
-    "main.js": "/rishit-enterprises/static/js/main.6a899292.js",
+    "main.css": "/rishit-enterprises/static/css/main.61112442.css",
+    "main.js": "/rishit-enterprises/static/js/main.4546a88b.js",
     "static/js/453.74ea1b51.chunk.js": "/rishit-enterprises/static/js/453.74ea1b51.chunk.js",
     "static/media/banner-logo.png": "/rishit-enterprises/static/media/banner-logo.faf9578dfaf616ab5610.png",
     "static/media/mango.png": "/rishit-enterprises/static/media/mango.76de3f2d5ef466ecb122.png",
@@ -12,12 +12,12 @@
     "static/media/slick.ttf": "/rishit-enterprises/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/rishit-enterprises/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/rishit-enterprises/index.html",
-    "main.e2372866.css.map": "/rishit-enterprises/static/css/main.e2372866.css.map",
-    "main.6a899292.js.map": "/rishit-enterprises/static/js/main.6a899292.js.map",
+    "main.61112442.css.map": "/rishit-enterprises/static/css/main.61112442.css.map",
+    "main.4546a88b.js.map": "/rishit-enterprises/static/js/main.4546a88b.js.map",
     "453.74ea1b51.chunk.js.map": "/rishit-enterprises/static/js/453.74ea1b51.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e2372866.css",
-    "static/js/main.6a899292.js"
+    "static/css/main.61112442.css",
+    "static/js/main.4546a88b.js"
   ]
 }
