@@ -7,7 +7,7 @@ import slide1 from "../../assets/images/banner.png";
 const slides = [
   {
     bg: slide1,
-    title: "Organic Suruchi Fruit Pulps",
+    title: "Organic Fruit Pulps",
     subtitle: "Pure, Preservative‑Free Goodness",
     desc: "Our signature mango and chikoo pulps capture the essence of fresh fruits, perfect for smoothies, desserts, and traditional recipes.",
   },
