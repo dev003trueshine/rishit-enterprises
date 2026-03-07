@@ -47,7 +47,7 @@ export default function SeasonalCalendar() {
       name: "Premium Chikoo",
       months: ["October", "November", "December", "January", "February"],
       icon: "🤎",
-      color: "bg-chikoo/20 text-chikoo",
+      color: "bg-primary-subtle text-chikoo",
       availability: "peak",
     },
     {
@@ -58,7 +58,7 @@ export default function SeasonalCalendar() {
         "July", "August", "September", "October", "November", "December"
       ],
       icon: "🥤",
-      color: "bg-primary/20 text-primary",
+      color: "bg-primary-subtle text-primary",
       availability: "available",
     },
   ];
