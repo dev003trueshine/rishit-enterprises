@@ -80,7 +80,7 @@ const SliderPage = () => {
                     </div>
                     <div className="d-flex align-items-center gap-2">
                       <Icon name="TruckIcon" size={24} className="text-warning" />
-                      <span>24/7 Delivery</span>
+                      <span>Fast Delivery</span>
                     </div>
                     <div className="d-flex align-items-center gap-2">
                       <Icon name="ShieldCheckIcon" size={24} className="text-success" variant="solid" />

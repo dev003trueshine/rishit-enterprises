@@ -1,26 +1,26 @@
 import AppImage from "components/ui/AppImage";
 import Icon from "components/ui/AppIcon";
-
+import mangoPulpImg from '../../assets/images/mango-pulp.jpg';
 const MangoPulpProducts = ({ onOrderClick }) => {
   const pulpProducts = [
+    // {
+    //   id: 1,
+    //   name: "Premium Alphonso Pulp",
+    //   variety: "Alphonso",
+    //   image: "https://img.rocket.new/generatedImages/rocket_gen_img_17fcb1924-1764752495265.png",
+    //   alt: "Glass jar of golden Alphonso mango pulp with fresh mango slices on white background",
+    //   size: "850g",
+    //   price: "₹450",
+    //   features: ["100% Natural", "No Preservatives", "No Added Sugar", "Farm Fresh"],
+    //   shelfLife: "12 months",
+    //   packaging: "Food-grade Glass Jar",
+    //   inStock: true
+    // },
     {
       id: 1,
-      name: "Premium Alphonso Pulp",
-      variety: "Alphonso",
-      image: "https://img.rocket.new/generatedImages/rocket_gen_img_17fcb1924-1764752495265.png",
-      alt: "Glass jar of golden Alphonso mango pulp with fresh mango slices on white background",
-      size: "850g",
-      price: "₹450",
-      features: ["100% Natural", "No Preservatives", "No Added Sugar", "Farm Fresh"],
-      shelfLife: "12 months",
-      packaging: "Food-grade Glass Jar",
-      inStock: true
-    },
-    {
-      id: 2,
       name: "Kesar Mango Pulp",
       variety: "Kesar",
-      image: "https://img.rocket.new/generatedImages/rocket_gen_img_15256be73-1765888820992.png",
+      image: mangoPulpImg,
       alt: "Sealed container of orange Kesar mango pulp with product label and fresh mangoes",
       size: "1kg",
       price: "₹380",
@@ -29,32 +29,32 @@ const MangoPulpProducts = ({ onOrderClick }) => {
       packaging: "BPA-free Plastic Container",
       inStock: true
     },
-    {
-      id: 3,
-      name: "Mixed Variety Pulp",
-      variety: "Alphonso + Kesar",
-      image: "https://images.unsplash.com/photo-1600790047735-c37e9f187f71",
-      alt: "Two jars of mixed mango pulp varieties with golden and orange colors side by side",
-      size: "500g x 2",
-      price: "₹420",
-      features: ["Best of Both", "Balanced Flavor", "Natural Blend", "Gift Pack"],
-      shelfLife: "12 months",
-      packaging: "Dual Glass Jar Set",
-      inStock: true
-    },
-    {
-      id: 4,
-      name: "Bulk Alphonso Pulp",
-      variety: "Alphonso",
-      image: "https://img.rocket.new/generatedImages/rocket_gen_img_16ecae517-1765888823198.png",
-      alt: "Large commercial container of Alphonso mango pulp for bulk orders with measuring cup",
-      size: "5kg",
-      price: "₹2,200",
-      features: ["Restaurant Grade", "Cost Effective", "Consistent Quality", "Bulk Discount"],
-      shelfLife: "12 months",
-      packaging: "Food-grade Bucket",
-      inStock: true
-    }
+    // {
+    //   id: 3,
+    //   name: "Mixed Variety Pulp",
+    //   variety: "Alphonso + Kesar",
+    //   image: "https://images.unsplash.com/photo-1600790047735-c37e9f187f71",
+    //   alt: "Two jars of mixed mango pulp varieties with golden and orange colors side by side",
+    //   size: "500g x 2",
+    //   price: "₹420",
+    //   features: ["Best of Both", "Balanced Flavor", "Natural Blend", "Gift Pack"],
+    //   shelfLife: "12 months",
+    //   packaging: "Dual Glass Jar Set",
+    //   inStock: true
+    // },
+    // {
+    //   id: 4,
+    //   name: "Bulk Alphonso Pulp",
+    //   variety: "Alphonso",
+    //   image: "https://img.rocket.new/generatedImages/rocket_gen_img_16ecae517-1765888823198.png",
+    //   alt: "Large commercial container of Alphonso mango pulp for bulk orders with measuring cup",
+    //   size: "5kg",
+    //   price: "₹2,200",
+    //   features: ["Restaurant Grade", "Cost Effective", "Consistent Quality", "Bulk Discount"],
+    //   shelfLife: "12 months",
+    //   packaging: "Food-grade Bucket",
+    //   inStock: true
+    // }
   ];
 
   const benefits = [

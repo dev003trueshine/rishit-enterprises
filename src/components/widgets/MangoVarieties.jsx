@@ -1,29 +1,17 @@
 import AppImage from "components/ui/AppImage";
 import Icon from "components/ui/AppIcon";
-
+import goldenMangoImg from '../../assets/images/golden-kesar-mango.jpeg';
+import kesarMangoImg from '../../assets/images/kesar.jpeg';
+import rajapuriMangoImg from '../../assets/images/Rajapuri-Mango.webp';
+import langdoMangoImg from '../../assets/images/langdo-mango.webp';
+import dasheriMangoImg from '../../assets/images/dasheri-mango.jpg';
 const MangoVarieties = ({ onOrderClick }) => {
   const varieties = [
     {
       id: 1,
-      name: "Alphonso",
-      scientificName: "Mangifera indica 'Alphonso'",
-      image: "https://img.rocket.new/generatedImages/rocket_gen_img_17fcb1924-1764752495265.png",
-      alt: "Golden yellow Alphonso mangoes with smooth skin arranged on white marble surface",
-      season: "April - June",
-      taste: "Sweet, Rich, Aromatic",
-      texture: "Smooth, Non-fibrous",
-      bestFor: ["Fresh Eating", "Desserts", "Smoothies"],
-      priceRange: "₹800 - ₹1,200/kg",
-      availability: "In Season",
-      rating: 4.9,
-      description:
-        "The undisputed king of mangoes, known for its saffron-colored flesh and unmatched sweetness."
-    },
-    {
-      id: 2,
       name: "Kesar",
       scientificName: "Mangifera indica 'Kesar'",
-      image: "https://img.rocket.new/generatedImages/rocket_gen_img_15d78c381-1765888823209.png",
+      image: kesarMangoImg,//"https://img.rocket.new/generatedImages/rocket_gen_img_15d78c381-1765888823209.png",
       alt: "Bright orange Kesar mangoes with distinctive saffron hue displayed in traditional basket",
       season: "May - July",
       taste: "Sweet, Saffron Notes",
@@ -36,10 +24,26 @@ const MangoVarieties = ({ onOrderClick }) => {
         "Named after saffron for its distinctive color, this Gujarat specialty offers intense sweetness."
     },
     {
+      id: 2,
+      name: "Golden kesar",
+      scientificName: "Mangifera indica 'kesar'",
+      image: goldenMangoImg,//"https://img.rocket.new/generatedImages/rocket_gen_img_17fcb1924-1764752495265.png",
+      alt: "Golden yellow kesar mangoes with smooth skin arranged on white marble surface",
+      season: "April - June",
+      taste: "Sweet, Rich, Aromatic",
+      texture: "Smooth, Non-fibrous",
+      bestFor: ["Fresh Eating", "Desserts", "Smoothies"],
+      priceRange: "₹800 - ₹1,200/kg",
+      availability: "In Season",
+      rating: 4.9,
+      description:
+        "The undisputed king of mangoes, known for its saffron-colored flesh and unmatched sweetness."
+    },
+    {
       id: 3,
       name: "Dasheri",
       scientificName: "Mangifera indica 'Dasheri'",
-      image: "https://img.rocket.new/generatedImages/rocket_gen_img_15256be73-1765888820992.png",
+      image: dasheriMangoImg,//"https://img.rocket.new/generatedImages/rocket_gen_img_15256be73-1765888820992.png",
       alt: "Elongated green-yellow Dasheri mangoes with characteristic oblong shape on wooden cutting board",
       season: "June - July",
       taste: "Sweet, Aromatic",
@@ -69,9 +73,9 @@ const MangoVarieties = ({ onOrderClick }) => {
     },
     {
       id: 5,
-      name: "Totapuri",
+      name: "Rajapuri",
       scientificName: "Mangifera indica 'Totapuri'",
-      image: "https://img.rocket.new/generatedImages/rocket_gen_img_1eaa4ac3e-1765377558677.png",
+      image: rajapuriMangoImg,//"https://img.rocket.new/generatedImages/rocket_gen_img_1eaa4ac3e-1765377558677.png",
       alt: "Pointed beak-shaped Totapuri mangoes with yellow-green skin on banana leaf",
       season: "May - July",
       taste: "Tangy, Mildly Sweet",
@@ -82,22 +86,6 @@ const MangoVarieties = ({ onOrderClick }) => {
       rating: 4.5,
       description:
         "Distinctive parrot-beak shape makes it perfect for culinary applications and traditional dishes."
-    },
-    {
-      id: 6,
-      name: "Banganapalli",
-      scientificName: "Mangifera indica 'Banganapalli'",
-      image: "https://img.rocket.new/generatedImages/rocket_gen_img_18dc256bf-1765377558919.png",
-      alt: "Large golden Banganapalli mangoes with smooth texture displayed in woven bamboo basket",
-      season: "May - June",
-      taste: "Mildly Sweet, Delicate",
-      texture: "Smooth, Less Fibrous",
-      bestFor: ["Fresh Eating", "Juice", "Pulp"],
-      priceRange: "₹350 - ₹550/kg",
-      availability: "In Season",
-      rating: 4.7,
-      description:
-        "Andhra Pradesh's pride, known for its large size and subtle sweetness."
     }
   ];
 

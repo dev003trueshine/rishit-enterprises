@@ -84,7 +84,7 @@ const CustomerTestimonials = () => {
   ];
 
   const stats = [
-    { icon: "UserGroupIcon", value: "2,500+", label: "Happy Customers" },
+    { icon: "UserGroupIcon", value: "500+", label: "Happy Customers" },
     { icon: "StarIcon", value: "4.9/5", label: "Average Rating" },
     { icon: "TruckIcon", value: "5,000+", label: "Orders Delivered" },
     { icon: "ArrowPathIcon", value: "85%", label: "Repeat Customers" },

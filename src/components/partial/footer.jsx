@@ -150,9 +150,9 @@ const Footer = () => {
                   size={20}
                   className="text-warning flex-shrink-0 mt-1"
                 />
-                <span className="text-white text-sm">
-                  Farm Address: Village Ratnagiri,
-                  {"\n"}Maharashtra, India - 415612
+                <span className="text-white text-sm leading-relaxed">
+                  Farm Address: Majigam Dera Faliya,
+                  {"\n"}Ta.-Chikhli, Dist.-Navsari, Gujarat
                 </span>
               </div>
 
