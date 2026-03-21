@@ -37,7 +37,6 @@ const inquiryTypes = [ { value: 'general', label: 'General Inquiry' }, { value: 
               </div>
 
               {/* Email & Phone */}
-              <div className="grid sm:grid-cols-2 gap-6">
                 <div>
                   <label
                     htmlFor="email"
@@ -69,7 +68,6 @@ const inquiryTypes = [ { value: 'general', label: 'General Inquiry' }, { value: 
                     placeholder="98765 43210"
                   />
                 </div>
-              </div>
 
               {/* Inquiry Type */}
               <div>

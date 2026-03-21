@@ -113,7 +113,7 @@ export default function FarmingPracticesSection({ className = "" }) {
         </div>
 
         {/* Behind the Scenes */}
-        <div className="bg-body rounded-lg p-12">
+        {/* <div className="bg-body rounded-lg p-12">
           <h3 className="fw-bold text-3xl mb-5 text-center">
             Behind the Scenes: From Tree to Table
           </h3>
@@ -140,7 +140,7 @@ export default function FarmingPracticesSection({ className = "" }) {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

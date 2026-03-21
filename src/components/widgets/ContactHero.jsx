@@ -2,7 +2,7 @@ import React from "react";
 import Icon from "components/ui/AppIcon"; // adjust path if needed
 const handleWhatsAppClick = () => {
   const message = encodeURIComponent(
-    "Hi! I would like to know more about your fresh fruits."
+    "Hello Rishit Enterprise! I'm interested in your business services. Can you provide more details on bulk orders and pricing? Thanks!"
   );
   window.open(`https://wa.me/8238157599?text=${message}`, "_blank");
 };

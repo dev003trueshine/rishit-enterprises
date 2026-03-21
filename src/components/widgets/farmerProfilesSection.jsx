@@ -2,6 +2,10 @@ import React from "react";
 import AppImage from "components/ui/AppImage";
 import Icon from "components/ui/AppIcon";
 
+import img1 from "../../assets/images/dahyabhai.png";
+import img2 from "../../assets/images/mohanbhai.png";
+import img3 from "../../assets/images/nanubhai.png";
+
 export default function FarmerProfilesSection({ className = "" }) {
   const farmers = [
     {
@@ -9,7 +13,7 @@ export default function FarmerProfilesSection({ className = "" }) {
       name: "Dahybhai Patel",
       role: "Master Chikoo Specialist", // Highlighted his specialty
       experience: "25+ Years",
-      image: "https://img.rocket.new/generatedImages/rocket_gen_img_1aac56550-1763295507132.png",
+      image: img1,
       alt: "Dahybhai Patel, Senior Farmer and Founder, standing in his orchard",
       expertise: ["Chikoo Cultivation Expert", "Organic Farming", "Export Quality Management"],
       quote: "Our Chikoo carries the sweetness of 25 years of dedicated organic farming.",
@@ -19,7 +23,7 @@ export default function FarmerProfilesSection({ className = "" }) {
       name: "Mohanbhai Patel",
       role: "Chief Quality & Harvest Manager",
       experience: "20 Years",
-      image: "https://img.rocket.new/generatedImages/rocket_gen_img_1f6d6649d-1764637483344.png",
+      image: img2,
       alt: "Mohanbhai Patel inspecting fruit quality in the packing facility",
       expertise: ["Mango & Chikoo Specialist", "Post-Harvest Care", "Organic Farming"],
       quote: "Whether it's Mango or Chikoo, we ensure every fruit meets our gold standard.",
@@ -29,47 +33,13 @@ export default function FarmerProfilesSection({ className = "" }) {
       name: "Nanubhai Patel",
       role: "Operations Head & Mango Specialist", // Highlighted Mango specialty
       experience: "20 Years",
-      image: "https://img.rocket.new/generatedImages/rocket_gen_img_194ad82d6-1764650746007.png",
+      image: img3,
       alt: "Nanubhai Patel managing farm operations in the mango orchard",
       expertise: ["Mango Variety Specialist", "Modern Farm Tech", "Supply Chain Logistics"],
       quote: "Merging modern precision with traditional wisdom for the perfect harvest.",
     },
   ];
-  // const farmers = [
-  //   {
-  //     id: 1,
-  //     name: "Dahybhai Patel",
-  //     role: "Founder & Chief Farmer",
-  //     experience: "25 Years",
-  //     image:
-  //       "https://img.rocket.new/generatedImages/rocket_gen_img_1aac56550-1763295507132.png",
-  //     alt: "Senior Indian farmer with white beard wearing traditional kurta standing in mango orchard with farming tools",
-  //     expertise: ["Organic Farming", "Mango Cultivation", "Soil Management"],
-  //     quote: "Every fruit we grow carries our family's pride and commitment to quality",
-  //   },
-  //   {
-  //     id: 2,
-  //     name: "Mohanbhai Patel",
-  //     role: "Quality Manager",
-  //     experience: "20 Years",
-  //     image:
-  //       "https://img.rocket.new/generatedImages/rocket_gen_img_1f6d6649d-1764637483344.png",
-  //     alt: "Young Indian woman in green saree inspecting mangoes with clipboard in modern packing facility",
-  //     expertise: ["Quality Control", "Organic Certification", "Post-Harvest Care"],
-  //     quote: "We ensure every fruit meets our strict quality standards before reaching you",
-  //   },
-  //   {
-  //     id: 3,
-  //     name: "Nanubhai Patel",
-  //     role: "Operations Head",
-  //     experience: "20 Years",
-  //     image:
-  //       "https://img.rocket.new/generatedImages/rocket_gen_img_194ad82d6-1764650746007.png",
-  //     alt: "Young Indian man in casual shirt using tablet while standing among fruit trees in modern orchard",
-  //     expertise: ["Farm Technology", "Customer Relations", "Logistics"],
-  //     quote: "Combining traditional wisdom with modern technology to serve you better",
-  //   },
-  // ];
+
 
   return (
     <section className={`py-24 bg-body ${className}`}>

@@ -11,14 +11,14 @@ const Footer = () => {
 
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent(
-      "Hi! I would like to know more about your fresh fruits."
+      "Hello Rishit Enterprise! I'm interested in your business services. Can you provide more details on bulk orders and pricing? Thanks!"
     );
     window.open(`https://wa.me/919876543210?text=${message}`, "_blank");
   };
 
   const quickLinks = [
     { label: "Home", href: "/" },
-    { label: "Fruits Catalog", href: "/fruits-catalog" },
+    // { label: "Fruits Catalog", href: "/fruits-catalog" },
     { label: "Mango Products", href: "/mango-products" },
     { label: "About Us", href: "/about" },
     { label: "Contact", href: "/contact" },
@@ -172,15 +172,30 @@ const Footer = () => {
 
               <div className="d-flex gap-12">
                 <Icon
+                  name="LinkIcon"
+                  size={20}
+                  className="text-warning flex-shrink-0"
+                />
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/_rishit_enterprise_?igsh=MTAzNnZ6NTNxOGd0cA%3D%3D&utm_source=qr"
+                  className="text-white text-sm"
+                >
+                  _rishit_enterprise_
+                </a>
+              </div>
+
+              <div className="d-flex gap-12">
+                <Icon
                   name="EnvelopeIcon"
                   size={20}
                   className="text-warning flex-shrink-0"
                 />
                 <a
-                  href="mailto:orders@rishitfruits.com"
+                  href="mailto:rishitenterprise.official@gmail.com"
                   className="text-white text-sm"
                 >
-                  orders@rishitfruits.com
+                  rishitenterprise.official@gmail.com
                 </a>
               </div>
 
@@ -209,7 +224,7 @@ const Footer = () => {
               Quality Guaranteed.
             </span>
 
-            <div className="d-flex align-items-center gap-lg-4 gap-2">
+            {/* <div className="d-flex align-items-center gap-lg-4 gap-2">
               <Link
                 to="#"
                 className="text-sm footer-links"
@@ -222,7 +237,11 @@ const Footer = () => {
               >
                 Terms of Service
               </Link>
-            </div>
+            </div> */}
+              <p className="text-sm text-white m-0">
+            Designed & Developed by 
+            <a href="https://www.linkedin.com/in/appzone-infinity-0a316225a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" className="text-white fw-semibold"> AppzoneInfinity</a>
+          </p>
           </div>
         </div>
       </div>

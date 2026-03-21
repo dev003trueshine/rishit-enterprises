@@ -5,7 +5,7 @@ import kesarMangoImg from '../../assets/images/kesar.jpeg';
 import rajapuriMangoImg from '../../assets/images/Rajapuri-Mango.webp';
 import langdoMangoImg from '../../assets/images/langdo-mango.webp';
 import dasheriMangoImg from '../../assets/images/dasheri-mango.jpg';
-const MangoVarieties = ({ onOrderClick }) => {
+const MangoVarieties = ({ onOrderClick = () => {} }) => {
   const varieties = [
     {
       id: 1,
@@ -18,7 +18,7 @@ const MangoVarieties = ({ onOrderClick }) => {
       texture: "Firm, Juicy",
       bestFor: ["Fresh Eating", "Pulp", "Juice"],
       priceRange: "₹600 - ₹900/kg",
-      availability: "In Season",
+      availability: "Pre-Order",
       rating: 4.8,
       description:
         "Named after saffron for its distinctive color, this Gujarat specialty offers intense sweetness."
@@ -34,8 +34,8 @@ const MangoVarieties = ({ onOrderClick }) => {
       texture: "Smooth, Non-fibrous",
       bestFor: ["Fresh Eating", "Desserts", "Smoothies"],
       priceRange: "₹800 - ₹1,200/kg",
-      availability: "In Season",
-      rating: 4.9,
+      availability: "Pre-Order",
+      rating: 5,
       description:
         "The undisputed king of mangoes, known for its saffron-colored flesh and unmatched sweetness."
     },
@@ -50,7 +50,7 @@ const MangoVarieties = ({ onOrderClick }) => {
       texture: "Soft, Melting",
       bestFor: ["Fresh Eating", "Traditional Recipes"],
       priceRange: "₹400 - ₹600/kg",
-      availability: "In Season",
+      availability: "Pre-Order",
       rating: 4.7,
       description:
         "North Indian favorite with elongated shape and exceptionally aromatic flesh."
@@ -82,7 +82,7 @@ const MangoVarieties = ({ onOrderClick }) => {
       texture: "Firm, Crunchy",
       bestFor: ["Cooking", "Pickles", "Salads"],
       priceRange: "₹250 - ₹400/kg",
-      availability: "In Season",
+      availability: "Pre-Order",
       rating: 4.5,
       description:
         "Distinctive parrot-beak shape makes it perfect for culinary applications and traditional dishes."
@@ -91,12 +91,12 @@ const MangoVarieties = ({ onOrderClick }) => {
 
   const getAvailabilityColor = (status) => {
     switch (status) {
-      case "In Season":
-        return "bg-success/10 text-success border-success/20";
       case "Pre-Order":
-        return "bg-warning/10 text-warning border-warning/20";
+        return "bg-success-subtle text-success border-success";
+      case "Pre-Order":
+        return "bg-warning-subtle text-warning border-warning";
       default:
-        return "bg-muted text-muted-foreground border-border";
+        return "bg-muted text-muted-foreground border";
     }
   };
 
@@ -133,19 +133,19 @@ const MangoVarieties = ({ onOrderClick }) => {
                 />
 
                 {/* Availability */}
-                <div
+                {/* <div
                   className={`position-absolute top-4 right-4 px-3 py-1.5 rounded-full text-xs fw-semibold border ${getAvailabilityColor(
                     variety.availability
                   )}`}
                 >
                   {variety.availability}
-                </div>
+                </div> */}
 
                 {/* Rating */}
-                <div className="position-absolute d-flex gap-1 star-badge px-3 z-5 py-1 bg-transparent rounded-pill fw-semibold text-xs text-success border shadow-organic">
+                {/* <div className="position-absolute d-flex gap-1 star-badge px-3 z-5 py-1 bg-transparent rounded-pill fw-semibold text-xs text-success border shadow-organic">
                   <Icon name="StarIcon" size={16} className="text-warning" variant="solid" />
                   <span className="fw-bold text-sm text-heading">{variety.rating}</span>
-                </div>
+                </div> */}
               </div>
 
               {/* Content */}
@@ -192,19 +192,19 @@ const MangoVarieties = ({ onOrderClick }) => {
 
                 {/* Price + CTA */}
                 <div className="d-flex align-items-center justify-content-between pt-4">
-                  <div>
+                  {/* <div>
                     <p className="text-xs m-0">Price Range</p>
-                    <p className="fw-bold text-lg text-primary">
+                    <p className="fw-bold text-lg text-primary m-0">
                       {variety.priceRange}
                     </p>
-                  </div>
+                  </div> */}
                   <button
                     onClick={() => onOrderClick(variety)}
                     disabled={variety.availability === "Out of Season"}
-                    className="d-flex align-items-center gap-2 px-4 py-2 btn btn-success text-white rounded-lg font-semibold text-sm"
+                    className="d-flex align-items-center justify-content-center gap-2 px-4 py-2 btn btn-success text-white w-100 rounded-lg font-semibold text-sm"
                   >
                     <Icon name="ShoppingCartIcon" size={18} variant="solid" />
-                    Order
+                    Pre Order
                   </button>
                 </div>
               </div>

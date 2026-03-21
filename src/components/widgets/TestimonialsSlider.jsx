@@ -4,33 +4,52 @@ import Icon from 'components/ui/AppIcon';
 
 const testimonials = [
   {
-    text: "Best quality chikoo I've ever tasted! Farm-fresh and naturally sweet. The delivery was prompt and packaging was excellent. Highly recommend Rishit Fruits!",
-    product: "Premium Chikoo - 5 kg",
-    name: "Rajesh Kumar",
+    text: "રિષિત એન્ટરપ્રાઇઝની કેસર કેરીની ક્વોલિટી અને સ્વાદ ખરેખર લાજવાબ છે. પેકિંગ ઘણું મજબૂત હતું અને દરેક фળ એકદમ તાજું અને કુદરતી રીતે પાકેલું મળ્યું.",
+    product: "પ્રીમિયમ કેસર કેરી - 20 kg",
+    name: "ભાવનાબેન પટેલ",
+    location: "ચીખલી, ગુજરાત",
+  },
+
+  {
+    text: "મેં દાહોદમાં મારા પરિવાર માટે કેરી મંગાવી હતી. રિષિત એન્ટરપ્રાઇઝનો માલ એકદમ તાજો હતો અને ડિલિવરી પણ સમયસર મળી ગઈ.",
+    product: "કેસર કેરી - 10 kg",
+    name: "રાજેશ પંચાલ",
+    location: "દાહોદ, ગુજરાત",
+  },
+  {
+    text: "ગોધરામાં આટલા સરસ ચીકુ બીજે ક્યાંય નથી મળતા. રિષિત એન્ટરપ્રાઇઝની સર્વિસ અને ક્વોલિટી બંને બહુ જ સરસ છે.",
+    product: "તાજા ચીકુ",
+    name: "નરેશભાઈ",
+    location: "ગોધરા, ગુજરાત",
+  },
+  {
+    text: "લુણાવાડામાં અમને રિષિત એન્ટરપ્રાઇઝ તરફથી ખૂબ જ સારા ફ્રુટ્સ મળ્યા. ફળની મીઠાશ કુદરતી છે, જરૂરથી ફરી ઓર્ડર કરીશ.",
+    product: "કેરી ",
+    name: "હિતેશ શાહ",
+    location: "લુણાવાડા, ગુજરાત",
+  },
+
+  // HINDI - Personal Experience
+  {
+    text: "अहमदाबाद में Rishit Enterprise से मंगाए गए फल एकदम ताजे थे। घर के सभी लोगों को चिकू का स्वाद बहुत पसंद आया।",
+    product: "प्रीमियम चिकू",
+    name: "मनीष प्रजापति",
+    location: "अहमदाबाद, गुजरात",
+  },
+  {
+    text: "बड़ौदा में हमने पहली बार Rishit Enterprise से ऑर्डर किया और क्वालिटी देख कर बहुत खुश हुए। डिलीवरी बहुत फ़ास्ट है।",
+    product: "ताजी केसर कैरी",
+    name: "संजय भाई",
+    location: "वडोदरा (Baroda)",
+  },
+
+  // ENGLISH - Personal Experience
+  {
+    text: "Excellent service from Rishit Enterprise. The fruits delivered in Delhi were as fresh as if they were just picked from the farm. Highly recommended!",
+    product: "Premium Fruit Box",
+    name: "Sunil Khanna",
     location: "Delhi, India",
-    avatar: "https://picsum.photos/100",
-  },
-  {
-    text: "Amazing mangoes! Sweet, juicy, and delivered fresh from the farm. Will definitely order again.",
-    product: "Alphonso Mango - 3 kg",
-    name: "Amit Sharma",
-    location: "Mumbai, India",
-    avatar: "https://picsum.photos/101",
-  },
-  {
-    text: "Great packaging and super fast delivery. Fruits were fresh and delicious.",
-    product: "Fresh Apples - 2 kg",
-    name: "Neha Verma",
-    location: "Bangalore, India",
-    avatar: "https://picsum.photos/102",
-  },
-  {
-    text: "Excellent quality and taste. Totally worth the price!",
-    product: "Organic Oranges - 4 kg",
-    name: "Ritika Singh",
-    location: "Pune, India",
-    avatar: "https://picsum.photos/103",
-  },
+  }
 ];
 
 const TestimonialsSlider = () => {
@@ -92,12 +111,18 @@ const TestimonialsSlider = () => {
 
                     {/* User */}
                     <div className="d-flex align-items-center gap-3">
-                      <div className="position-relative w-16 h-16 rounded-full overflow-hidden">
-                        <img
-                          src={item.avatar}
-                          alt={item.name}
-                          className="w-100 h-100 object-fit-cover"
-                        />
+                      <div className="position-relative w-16 h-16 rounded-full overflow-hidden bg-primary-subtle d-flex align-items-center justify-content-center">
+                        {item.avatar ? (
+                          <img
+                            src={item.avatar}
+                            alt={item.name}
+                            className="w-100 h-100 object-fit-cover"
+                          />
+                        ) : (
+                          <span className="text-primary fw-bold text-lg">
+                            {item.name.charAt(0).toUpperCase()}
+                          </span>
+                        )}
                       </div>
                       <div>
                         <h4 className="fw-bold text-lg mb-0">

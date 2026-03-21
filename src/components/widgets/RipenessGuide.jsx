@@ -1,6 +1,6 @@
 import AppImage from "components/ui/AppImage";
 import Icon from "components/ui/AppIcon";
-
+import img1 from "../../assets/images/green-mango.jpg";
 const RipenessGuide = () => {
   const ripenessStages = [
     {
@@ -9,7 +9,7 @@ const RipenessGuide = () => {
       firmness: "Very Firm",
       aroma: "Minimal",
       bestFor: "Pickling, Cooking",
-      image: "https://img.rocket.new/generatedImages/rocket_gen_img_15d2e46e6-1764831692142.png",
+      image: img1,
       alt: "Unripe green mangoes with firm texture on wooden surface",
       tips: [
         "Store at room temperature to ripen",
@@ -101,7 +101,7 @@ const RipenessGuide = () => {
   ];
 
   return (
-    <section className="py-24 bg-card">
+    <section className="py-24 bg-body">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">

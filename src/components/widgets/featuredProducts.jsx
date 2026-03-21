@@ -86,25 +86,32 @@ export default function FeaturedProducts({ onWhatsAppOrder }) {
                   <h3 className="fw-bold text-xl mb-2">
                     {product.name}
                   </h3>
-                  <div className="d-flex align-items-center gap-2 text-sm text-body">
+                  {/* <div className="d-flex align-items-center gap-2 text-sm text-body">
                     <Icon name="UserGroupIcon" size={16} />
                     <span>{product.reviews} reviews</span>
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className="d-flex align-items-center gap-2 justify-content-between mb-3">
-                  <div className="d-flex align-items-center gap-2">
+                  {/* <div className="d-flex align-items-center gap-2">
                     <span className="fw-bold text-2xl text-primary m-0">
                       ₹{product.price}
                     </span>
                     <span className="text-sm">
                       {product.unit}
                     </span>
-                  </div>
-                  <div className="d-flex align-items-center gap-1 text-success">
-                    <Icon name="CheckCircleIcon" size={20} variant="solid" />
-                    <span className="text-sm fw-medium">In Stock</span>
-                  </div>
+                  </div> */}
+                  {product.inStock ? (
+                    <div className="d-flex align-items-center gap-1 text-success">
+                      <Icon name="CheckCircleIcon" size={20} variant="solid" />
+                      <span className="text-sm fw-semibold">In Stock</span>
+                    </div>
+                  ) : (
+                    <div className="d-flex align-items-center gap-1 text-warning">
+                      <Icon name="ClockIcon" size={20} variant="solid" />
+                      <span className="text-sm fw-semibold">Coming Soon</span>
+                    </div>
+                  )}
                 </div>
 
                 <button
@@ -120,12 +127,12 @@ export default function FeaturedProducts({ onWhatsAppOrder }) {
         </div>
 
         {/* CTA */}
-        <div className="d-flex align-items-center justify-content-center">
+        {/* <div className="d-flex align-items-center justify-content-center">
           <a href="/fruits-catalog" className="btn btn-primary text-white d-flex align-items-center justify-content-center rounded-lg gap-2 px-6 py-3">
             View Complete Catalog
             <Icon name="ArrowRightIcon" size={20} />
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

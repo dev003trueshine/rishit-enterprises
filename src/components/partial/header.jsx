@@ -9,8 +9,8 @@ const Header = ({ className = "" }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navigationItems = [
-    { label: "Home", href: "https://dev003trueshine.github.io/rishit-enterprises/", external: true },
-    { label: "Fruits Catalog", href: "/fruits-catalog" },
+    { label: "Home", href: "/", external: true },
+    // { label: "Fruits Catalog", href: "/fruits-catalog" },
     { label: "Mango Products", href: "/mango-products" },
     { label: "About Us", href: "/about" },
     { label: "Contact", href: "/contact" },
@@ -18,20 +18,20 @@ const Header = ({ className = "" }) => {
 
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent(
-      "Hi! I would like to know more about your fresh fruits."
+      "Hello Rishit Enterprise! I'm interested in your business services. Can you provide more details on bulk orders and pricing? Thanks!"
     );
-    window.open(`https://wa.me/8238157599?text=${message}`, "_blank");
+    window.open(`https://wa.me/+918238157599?text=${message}`, "_blank");
   };
 
   return (
-    <header
+    <header 
       className={`w-full bg-card border-bottom position-sticky top-0 z-9 ${className}`}
     >
       <div className="container mx-auto px-4">
         <div className="d-flex align-items-center justify-content-between h-20">
           {/* Logo Section */}
           <a
-            href="https://dev003trueshine.github.io/rishit-enterprises/"
+            href="/"
             className="d-flex align-items-center gap-2 hover:opacity-80 transition-organic"
           >
             {/* ...existing code... */}

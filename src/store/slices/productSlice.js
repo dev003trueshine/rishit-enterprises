@@ -5,7 +5,7 @@ import kesarMangoImg from '../../assets/images/kesar.jpeg';
 import rajapuriMangoImg from '../../assets/images/Rajapuri-Mango.webp';
 import langdoMangoImg from '../../assets/images/langdo-mango.webp';
 import dasheriMangoImg from '../../assets/images/dasheri-mango.jpg';
-import mangoPulpImg from '../../assets/images/mango-pulp.jpg';
+import mangoPulpImg from '../../assets/images/mango-pulp.jpeg';
 // // 1. Create the async thunk for fetching products
 // export const fetchProducts = createAsyncThunk(
 //   'product/fetchProducts',
@@ -23,6 +23,18 @@ const initialState = {
     "products": [
         {
             "id": 1,
+            "name": "Premium Chikoo",
+            "category": "Chikoo",
+            "price": 120,
+            "unit": "per kg",
+            "image": chikoImg,
+            "alt": "Brown ripe chikoo sapodilla fruits in natural fiber basket",
+            "rating": 4.7,
+            "reviews": 156,
+            "inStock": true
+        },
+        {
+            "id": 2,
             "name": "Kesar Mango",
             "category": "Mangoes",
             "price": 380,
@@ -35,7 +47,7 @@ const initialState = {
             "inStock": false
         },
         {
-            "id": 2,
+            "id": 3,
             "name": "Rajapuri Mango",
             "category": "Mangoes",
             "price": 400,
@@ -47,7 +59,7 @@ const initialState = {
             "inStock": false
         },
         {
-            "id": 3,
+            "id": 4,
             "name": "Langdo Mango",
             "category": "Mangoes",
             "price": 350,
@@ -59,7 +71,7 @@ const initialState = {
             "inStock": false
         },
         {
-            "id": 4,
+            "id": 5,
             "name": "Dasheri Mango",
             "category": "Mangoes",
             "price": 300,
@@ -71,7 +83,7 @@ const initialState = {
             "inStock": false
         },
         {
-            "id": 5,
+            "id": 6,
             "name": "Golden Mango",
             "category": "Mangoes",
             "price": 420,
@@ -81,18 +93,6 @@ const initialState = {
             "rating": 4.8,
             "reviews": 0,
             "inStock": false
-        },
-        {
-            "id": 6,
-            "name": "Premium Chikoo",
-            "category": "Chikoo",
-            "price": 120,
-            "unit": "per kg",
-            "image": chikoImg,
-            "alt": "Brown ripe chikoo sapodilla fruits in natural fiber basket",
-            "rating": 4.7,
-            "reviews": 156,
-            "inStock": true
         },
         {
             "id": 7,
