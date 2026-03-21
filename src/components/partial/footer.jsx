@@ -26,14 +26,6 @@ const Footer = () => {
     { label: "Mango Pulp", href: "/mango-products" },
   ];
 
-  const productCategories = [
-    // { label: "Kesar Mangoes", href: "/product-detail" },
-    // { label: "Premium Chikoo", href: "/product-detail" },
-    // { label: "Mango Pulp", href: "/mango-products" },
-    // { label: "Bulk Orders", href: "/contact" },
-    // { label: "Pricing Plan", href: "/pricing" },
-  ];
-
   return (
     <footer className="bg-primary">
       {/* Main Footer Content */}
@@ -231,6 +223,7 @@ const Footer = () => {
                 />
                 <a
                   target="_blank"
+                  rel="noreferrer"
                   href="https://www.instagram.com/_rishit_enterprise_?igsh=MTAzNnZ6NTNxOGd0cA%3D%3D&utm_source=qr"
                   className="text-white text-sm"
                 >
@@ -246,6 +239,7 @@ const Footer = () => {
                 />
                 <a
                   target="_blank"
+                  rel="noreferrer"
                   href="https://www.facebook.com/share/1CLUVReqtv/"
                   className="text-white text-sm"
                 >
@@ -294,7 +288,7 @@ const Footer = () => {
             </div> */}
             <p className="text-sm text-white m-0">
               Designed & Developed by
-              <a href="https://www.linkedin.com/in/appzone-infinity-0a316225a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" className="text-white fw-semibold"> AppzoneInfinity</a>
+              <a href="https://www.linkedin.com/in/appzone-infinity-0a316225a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer" className="text-white fw-semibold"> AppzoneInfinity</a>
             </p>
           </div>
         </div>

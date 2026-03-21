@@ -117,8 +117,8 @@ const ProductDetail = () => {
         <div className="d-flex align-items-center gap-2 text-sm">
           <nav style={{ "--bs-breadcrumb-divider": "'>'" }} aria-label="breadcrumb">
             <ol className="breadcrumb">
-              <li className="breadcrumb-item"><a href="#">Home</a></li>
-              <li className="breadcrumb-item"><a href="#">Fruits Catalog</a></li>
+              <li className="breadcrumb-item"><a href="#!">Home</a></li>
+              <li className="breadcrumb-item"><a href="#!">Fruits Catalog</a></li>
               <li className="breadcrumb-item active" aria-current="page">Alphonso Mangoes</li>
             </ol>
           </nav>
@@ -664,7 +664,7 @@ const ProductDetail = () => {
           {/* Header */}
           <div className="d-flex align-items-center justify-content-between flex-wrap gap-3">
             <h3 className="fw-bold text-2xl text-primary">You May Also Like</h3>
-            <a href="#" className="text-sm fw-medium btn btn-link p-0 d-flex align-items-center gap-1">
+            <a href="#!" className="text-sm fw-medium btn btn-link p-0 d-flex align-items-center gap-1">
               View All
               <svg
                 xmlns="http://www.w3.org/2000/svg"

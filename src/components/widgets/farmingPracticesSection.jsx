@@ -1,6 +1,5 @@
 import React from "react";
 import Icon from "components/ui/AppIcon";
-import AppImage from "components/ui/AppImage";
 
 export default function FarmingPracticesSection({ className = "" }) {
   const practices = [
@@ -45,37 +44,6 @@ export default function FarmingPracticesSection({ className = "" }) {
       title: "Sustainable Practices",
       description:
         "Composting farm waste, using renewable energy, and maintaining biodiversity for long-term farm health.",
-    },
-  ];
-
-  const steps = [
-    {
-      step: "01",
-      title: "Careful Harvesting",
-      image:
-        "https://img.rocket.new/generatedImages/rocket_gen_img_17d7c86fa-1764700522466.png",
-      alt: "Farmer carefully hand-picking ripe mangoes from tree using traditional basket in early morning light",
-    },
-    {
-      step: "02",
-      title: "Quality Sorting",
-      image:
-        "https://img.rocket.new/generatedImages/rocket_gen_img_14fc0c171-1765673967935.png",
-      alt: "Workers sorting fresh mangoes by size and quality on clean sorting table in packing facility",
-    },
-    {
-      step: "03",
-      title: "Hygienic Packaging",
-      image:
-        "https://img.rocket.new/generatedImages/rocket_gen_img_1b64eea91-1764831763811.png",
-      alt: "Clean packaging station with workers in gloves carefully packing mangoes in eco-friendly boxes",
-    },
-    {
-      step: "04",
-      title: "Direct Delivery",
-      image:
-        "https://images.unsplash.com/photo-1695653422259-8a74ffe90401",
-      alt: "Delivery person handing fresh fruit box to smiling customer at doorstep with green delivery van",
     },
   ];
 

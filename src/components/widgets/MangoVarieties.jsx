@@ -59,7 +59,7 @@ const MangoVarieties = ({ onOrderClick = () => {} }) => {
       id: 4,
       name: "Langra",
       scientificName: "Mangifera indica 'Langra'",
-      image: "https://img.rocket.new/generatedImages/rocket_gen_img_1953a6102-1764831688571.png",
+      image: langdoMangoImg, //"https://img.rocket.new/generatedImages/rocket_gen_img_1953a6102-1764831688571.png",
       alt: "Green-skinned Langra mangoes with unique appearance arranged in rustic clay bowl",
       season: "July - August",
       taste: "Sweet-Tangy Balance",
@@ -89,16 +89,16 @@ const MangoVarieties = ({ onOrderClick = () => {} }) => {
     }
   ];
 
-  const getAvailabilityColor = (status) => {
-    switch (status) {
-      case "Pre-Order":
-        return "bg-success-subtle text-success border-success";
-      case "Pre-Order":
-        return "bg-warning-subtle text-warning border-warning";
-      default:
-        return "bg-muted text-muted-foreground border";
-    }
-  };
+  // const getAvailabilityColor = (status) => {
+  //   switch (status) {
+  //     case "Pre-Order":
+  //       return "bg-success-subtle text-success border-success";
+  //     case "Waitlist":
+  //       return "bg-warning-subtle text-warning border-warning";
+  //     default:
+  //       return "bg-muted text-muted-foreground border";
+  //   }
+  // };
 
   return (
     <section className="py-24 bg-card">

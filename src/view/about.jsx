@@ -66,7 +66,7 @@ const About = () => {
                             </div>
                         </div>
                         <div className="">
-                            <img src={mango} alt="About Us Image" className="w-100 rounded-xl shadow-organic shadow-lg object-cover h-96"></img>
+                            <img src={mango} alt="About Us" className="w-100 rounded-xl shadow-organic shadow-lg object-cover h-96"></img>
                         </div>
                     </div>
                     {/* timeline Section */}
