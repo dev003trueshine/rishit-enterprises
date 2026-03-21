@@ -10,11 +10,11 @@ export default function FarmerProfilesSection({ className = "" }) {
   const farmers = [
     {
       id: 1,
-      name: "Dahybhai Patel",
+      name: "Dahyabhai Patel",
       role: "Master Chikoo Specialist", // Highlighted his specialty
       experience: "25+ Years",
       image: img1,
-      alt: "Dahybhai Patel, Senior Farmer and Founder, standing in his orchard",
+      alt: "Dahyabhai Patel, Senior Farmer and Founder, standing in his orchard",
       expertise: ["Chikoo Cultivation Expert", "Organic Farming", "Export Quality Management"],
       quote: "Our Chikoo carries the sweetness of 25 years of dedicated organic farming.",
     },

@@ -1,11 +1,37 @@
 import React, { useState } from 'react';
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import FsLightbox from "fslightbox-react";
-// Dynamically import all images from the gallery folder
-const req = require.context('../../assets/images/gallery', false, /\.(png|jpe?g)$/i);
-const dummyImages = req.keys().map(key => req(key).default || req(key));
+
+// Explicit imports — avoids require.context returning duplicate keys
+import img1  from '../../assets/images/gallery/1.jpg';
+import img2  from '../../assets/images/gallery/2.jpg';
+import img3  from '../../assets/images/gallery/3.jpg';
+import img4  from '../../assets/images/gallery/4.jpg';
+import img5  from '../../assets/images/gallery/5.jpg';
+import img6  from '../../assets/images/gallery/6.jpeg';
+import img7  from '../../assets/images/gallery/7.jpeg';
+import img8  from '../../assets/images/gallery/8.jpeg';
+import img9  from '../../assets/images/gallery/9.jpeg';
+import img10 from '../../assets/images/gallery/10.jpeg';
+import img11 from '../../assets/images/gallery/11.jpeg';
+import img12 from '../../assets/images/gallery/12.jpeg';
+import img13 from '../../assets/images/gallery/13.jpeg';
+import img14 from '../../assets/images/gallery/14.jpeg';
+import img15 from '../../assets/images/gallery/15.jpeg';
+import img16 from '../../assets/images/gallery/16.jpeg';
+import img17 from '../../assets/images/gallery/17.jpeg';
+import img18 from '../../assets/images/gallery/18.jpeg';
+import img19 from '../../assets/images/gallery/19.jpeg';
+import img20 from '../../assets/images/gallery/20.jpeg';
+import img21 from '../../assets/images/gallery/21.jpeg';
+
+const dummyImages = [
+    img1, img2, img3, img4, img5, img6, img7,
+    img8, img9, img10, img11, img12, img13, img14,
+    img15, img16, img17, img18, img19, img20, img21
+];
+
 const MasonryGallery = () => {
-    // Lightbox state
     const [lightboxController, setLightboxController] = useState({
         toggler: false,
         slide: 1

@@ -36,7 +36,7 @@ const Header = ({ className = "" }) => {
             className="d-flex align-items-center gap-2 hover:opacity-80 transition-organic"
           >
             {/* ...existing code... */}
-            <img src={logo} alt="logo" className="img-fluid" style={{ width: "292px" }} />
+            <img src={logo} alt="logo" className="img-fluid" style={{ width: "245px" }} />
           </a>
 
           {/* Desktop Navigation */}
