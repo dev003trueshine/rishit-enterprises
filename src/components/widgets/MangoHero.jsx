@@ -2,10 +2,16 @@ import React from "react";
 import AppImage from "components/ui/AppImage"; // adjust path if needed
 import Icon from "components/ui/AppIcon";
 
-export default function MangoHero({ onWhatsAppClick }) {
+const handleWhatsAppClick = () => {
+  const message = encodeURIComponent(
+    "Hello Rishit Enterprise! I'm interested in your business services. Can you provide more details on bulk orders and pricing? Thanks!"
+  );
+  window.open(`https://wa.me/8238157599?text=${message}`, "_blank");
+};
+export default function MangoHero({  onWhatsAppClick = handleWhatsAppClick }) {
   const features = [
     { icon: "CheckBadgeIcon", text: "Farm-Direct Quality" },
-    { icon: "TruckIcon", text: "Same-Day Delivery" },
+    { icon: "TruckIcon", text: "Fast Delivery" },
     { icon: "ShieldCheckIcon", text: "Freshness Guaranteed" },
     { icon: "GiftIcon", text: "Premium Packaging" },
   ];
@@ -20,7 +26,7 @@ export default function MangoHero({ onWhatsAppClick }) {
               <div className="d-inline-flex align-items-center gap-2 px-4 py-2 bg-warning-subtle rounded-full border border-warning svg-bg-warning">
                 <Icon name="SparklesIcon" size={20} className="text-warning" variant="solid" />
                 <span className="text-sm fw-semibold text-warning">
-                  Premium Mango Collection 2025
+                  Premium Mango Collection
                 </span>
               </div>
             </div>
@@ -64,10 +70,10 @@ export default function MangoHero({ onWhatsAppClick }) {
                 Order Fresh Mangoes
               </button>
 
-              <button className="d-flex align-items-center gap-2 px-8 py-4 btn btn-outline-primary rounded-lg fw-semibold text-base">
+              <a href="tel: +918238157599" className="d-flex align-items-center gap-2 px-8 py-4 btn btn-outline-primary rounded-lg fw-semibold text-base">
                 <Icon name="PhoneIcon" size={24} />
                 Bulk Orders
-              </button>
+              </a>
             </div>
 
             {/* Trust Badge */}
@@ -99,7 +105,7 @@ export default function MangoHero({ onWhatsAppClick }) {
                 <div className="flex items-center gap-2">
                   <Icon name="StarIcon" size={20} className="text-accent" variant="solid" />
                   <div>
-                    <p className="font-bold text-lg text-foreground">4.9/5</p>
+                    <p className="font-bold text-lg text-foreground">5/5</p>
                     <p className="text-xs text-muted-foreground">Customer Rating</p>
                   </div>
                 </div>

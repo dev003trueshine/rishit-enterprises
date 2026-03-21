@@ -8,7 +8,7 @@ export default function CertificationsSection({ className = "" }) {
       id: 1,
       name: "FSSAI License",
       issuer: "Food Safety Standards Authority",
-      year: "2010",
+      year: "2026",
       image:
         "https://img.rocket.new/generatedImages/rocket_gen_img_197f976d5-1765041173879.png",
       alt: "FSSAI food safety license certificate with official seal and registration number",
@@ -57,50 +57,50 @@ export default function CertificationsSection({ className = "" }) {
         <div className="row gy-4">
           {certifications.map((cert) => (
             <div className="col-lg-10 col-12 mx-auto">
-                <div
-                  key={cert.id}
-                  className="d-flex gap-lg-4 gap-2 flex-column flex-md-row bg-card rounded-lg overflow-hidden shadow-organic shadow-card-lg-hover p-6"
-                >
-                  <div className="position-relative h-48 bg-gray-200 d-flex align-items-center justify-content-center">
-                    <AppImage
-                      src={cert.image}
-                      alt={cert.alt}
-                      className="w-full h-full object-contain"
-                    />
-                  </div>
-
-                  <div className="pt-6">
-                    <h3 className="fw-semibold text-lg mb-2">
-                      {cert.name}
-                    </h3>
-
-                    <div className="d-flex align-items-center gap-2 mb-75">
-                      <Icon
-                        name="BuildingOfficeIcon"
-                        size={14}
-                        className="text-body"
-                      />
-                      <span className="text-sm">
-                        {cert.issuer}
-                      </span>
-                    </div>
-
-                    <div className="d-flex align-items-center gap-2 mb-75">
-                      <Icon
-                        name="CalendarIcon"
-                        size={14}
-                        className="text-body"
-                      />
-                      <span className="text-sm">
-                        Since {cert.year}
-                      </span>
-                    </div>
-
-                    <p className="text-sm leading-relaxed m-0">
-                      {cert.description}
-                    </p>
-                  </div>
+              <div
+                key={cert.id}
+                className="d-flex gap-lg-4 gap-2 flex-column flex-md-row bg-card rounded-lg overflow-hidden shadow-organic shadow-card-lg-hover p-6"
+              >
+                <div className="position-relative h-48 bg-gray-200 d-flex align-items-center justify-content-center">
+                  <AppImage
+                    src={cert.image}
+                    alt={cert.alt}
+                    className="w-full h-full object-contain"
+                  />
                 </div>
+
+                <div className="pt-6">
+                  <h3 className="fw-semibold text-lg mb-2">
+                    {cert.name}
+                  </h3>
+
+                  <div className="d-flex align-items-center gap-2 mb-75">
+                    <Icon
+                      name="BuildingOfficeIcon"
+                      size={14}
+                      className="text-body"
+                    />
+                    <span className="text-sm">
+                      {cert.issuer}
+                    </span>
+                  </div>
+
+                  <div className="d-flex align-items-center gap-2 mb-75">
+                    <Icon
+                      name="CalendarIcon"
+                      size={14}
+                      className="text-body"
+                    />
+                    <span className="text-sm">
+                      Since {cert.year}
+                    </span>
+                  </div>
+
+                  <p className="text-sm leading-relaxed m-0">
+                    {cert.description}
+                  </p>
+                </div>
+              </div>
             </div>
           ))}
         </div>

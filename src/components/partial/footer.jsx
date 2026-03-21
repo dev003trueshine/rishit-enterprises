@@ -11,25 +11,19 @@ const Footer = () => {
 
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent(
-      "Hi! I would like to know more about your fresh fruits."
+      "Hello Rishit Enterprise! I'm interested in your business services. Can you provide more details on bulk orders and pricing? Thanks!"
     );
-    window.open(`https://wa.me/919876543210?text=${message}`, "_blank");
+    window.open(`https://wa.me/+919876543210?text=${message}`, "_blank");
   };
 
   const quickLinks = [
     { label: "Home", href: "/" },
-    { label: "Fruits Catalog", href: "/fruits-catalog" },
+    // { label: "Fruits Catalog", href: "/fruits-catalog" },
     { label: "Mango Products", href: "/mango-products" },
+    { label: "Gallery", href: "/gallery" },
     { label: "About Us", href: "/about" },
     { label: "Contact", href: "/contact" },
-  ];
-
-  const productCategories = [
-    { label: "Kesar Mangoes", href: "/product-detail" },
-    { label: "Premium Chikoo", href: "/product-detail" },
     { label: "Mango Pulp", href: "/mango-products" },
-    { label: "Bulk Orders", href: "/contact" },
-    { label: "Pricing Plan", href: "/pricing" },
   ];
 
   return (
@@ -115,7 +109,7 @@ const Footer = () => {
           </div>
 
           {/* Products */}
-          <div>
+          {/* <div>
             <h3 className="fw-bold text-lg mb-3 text-white">
               Our Products
             </h3>
@@ -136,6 +130,71 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
+          </div> */}
+          {/* Contact Info */}
+          <div>
+            <h3 className="fw-bold text-lg mb-3 text-white">
+              Inquire & DM Us
+            </h3>
+            <div className="list-inline m-0 p-0 d-flex flex-column gap-3 footer-contact">
+
+              <div className="d-flex gap-12">
+                <Icon
+                  name="PhoneIcon"
+                  size={20}
+                  className="text-warning flex-shrink-0"
+                />
+                <a
+                  href="tel:+918238157599"
+                  className="text-white text-sm"
+                >
+                  +91 8238157599
+                </a> <span className="text-white text-sm">Vikas Patel</span>
+              </div>
+
+              <div className="d-flex gap-12">
+                <Icon
+                  name="PhoneIcon"
+                  size={20}
+                  className="text-warning flex-shrink-0"
+                />
+                <a
+                  href="tel:+919558287453"
+                  className="text-white text-sm"
+                >
+                  +91 95582 87453
+                </a> <span className="text-white text-sm">Tejas Patel</span>
+              </div>
+
+              <div className="d-flex gap-12">
+                <Icon
+                  name="PhoneIcon"
+                  size={20}
+                  className="text-warning flex-shrink-0"
+                />
+                <a
+                  href="tel:+918238939658"
+                  className="text-white text-sm"
+                >
+                  +91 8238939658
+                </a> <span className="text-white text-sm">Chirag Patel</span>
+              </div>
+
+              <div className="d-flex gap-12">
+                <Icon
+                  name="EnvelopeIcon"
+                  size={20}
+                  className="text-warning flex-shrink-0"
+                />
+                <a
+                  href="mailto:rishitenterprise.official@gmail.com"
+                  className="text-white text-sm"
+                >
+                  rishitenterprise.official@gmail.com
+                </a>
+              </div>
+            </div>
+
           </div>
 
           {/* Contact Info */}
@@ -150,37 +209,41 @@ const Footer = () => {
                   size={20}
                   className="text-warning flex-shrink-0 mt-1"
                 />
-                <span className="text-white text-sm">
-                  Farm Address: Village Ratnagiri,
-                  {"\n"}Maharashtra, India - 415612
+                <span className="text-white text-sm leading-relaxed">
+                  Farm Address: Majigam Dera Faliya,
+                  {"\n"}Ta.-Chikhli, Dist.-Navsari, Gujarat
                 </span>
               </div>
 
               <div className="d-flex gap-12">
                 <Icon
-                  name="PhoneIcon"
+                  name="instagramIcon"
                   size={20}
                   className="text-warning flex-shrink-0"
                 />
                 <a
-                  href="tel:+919876543210"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.instagram.com/_rishit_enterprise_?igsh=MTAzNnZ6NTNxOGd0cA%3D%3D&utm_source=qr"
                   className="text-white text-sm"
                 >
-                  +91 8238157599
+                  _rishit_enterprise_
                 </a>
               </div>
 
               <div className="d-flex gap-12">
                 <Icon
-                  name="EnvelopeIcon"
+                  name="facebookIcon"
                   size={20}
                   className="text-warning flex-shrink-0"
                 />
                 <a
-                  href="mailto:orders@rishitfruits.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.facebook.com/share/1CLUVReqtv/"
                   className="text-white text-sm"
                 >
-                  orders@rishitfruits.com
+                  Rishit Enterprise
                 </a>
               </div>
 
@@ -209,7 +272,7 @@ const Footer = () => {
               Quality Guaranteed.
             </span>
 
-            <div className="d-flex align-items-center gap-lg-4 gap-2">
+            {/* <div className="d-flex align-items-center gap-lg-4 gap-2">
               <Link
                 to="#"
                 className="text-sm footer-links"
@@ -222,7 +285,11 @@ const Footer = () => {
               >
                 Terms of Service
               </Link>
-            </div>
+            </div> */}
+            <p className="text-sm text-white m-0">
+              Designed & Developed by
+              <a href="https://www.linkedin.com/in/appzone-infinity-0a316225a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer" className="text-white fw-semibold"> AppzoneInfinity</a>
+            </p>
           </div>
         </div>
       </div>

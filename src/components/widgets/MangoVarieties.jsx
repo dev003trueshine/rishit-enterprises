@@ -1,52 +1,56 @@
 import AppImage from "components/ui/AppImage";
 import Icon from "components/ui/AppIcon";
-
-const MangoVarieties = ({ onOrderClick }) => {
+import goldenMangoImg from '../../assets/images/golden-kesar-mango.jpeg';
+import kesarMangoImg from '../../assets/images/kesar.jpeg';
+import rajapuriMangoImg from '../../assets/images/Rajapuri-Mango.webp';
+import langdoMangoImg from '../../assets/images/langdo-mango.webp';
+import dasheriMangoImg from '../../assets/images/dasheri-mango.jpg';
+const MangoVarieties = ({ onOrderClick = () => {} }) => {
   const varieties = [
     {
       id: 1,
-      name: "Alphonso",
-      scientificName: "Mangifera indica 'Alphonso'",
-      image: "https://img.rocket.new/generatedImages/rocket_gen_img_17fcb1924-1764752495265.png",
-      alt: "Golden yellow Alphonso mangoes with smooth skin arranged on white marble surface",
-      season: "April - June",
-      taste: "Sweet, Rich, Aromatic",
-      texture: "Smooth, Non-fibrous",
-      bestFor: ["Fresh Eating", "Desserts", "Smoothies"],
-      priceRange: "₹800 - ₹1,200/kg",
-      availability: "In Season",
-      rating: 4.9,
-      description:
-        "The undisputed king of mangoes, known for its saffron-colored flesh and unmatched sweetness."
-    },
-    {
-      id: 2,
       name: "Kesar",
       scientificName: "Mangifera indica 'Kesar'",
-      image: "https://img.rocket.new/generatedImages/rocket_gen_img_15d78c381-1765888823209.png",
+      image: kesarMangoImg,//"https://img.rocket.new/generatedImages/rocket_gen_img_15d78c381-1765888823209.png",
       alt: "Bright orange Kesar mangoes with distinctive saffron hue displayed in traditional basket",
       season: "May - July",
       taste: "Sweet, Saffron Notes",
       texture: "Firm, Juicy",
       bestFor: ["Fresh Eating", "Pulp", "Juice"],
       priceRange: "₹600 - ₹900/kg",
-      availability: "In Season",
+      availability: "Pre-Order",
       rating: 4.8,
       description:
         "Named after saffron for its distinctive color, this Gujarat specialty offers intense sweetness."
     },
     {
+      id: 2,
+      name: "Golden kesar",
+      scientificName: "Mangifera indica 'kesar'",
+      image: goldenMangoImg,//"https://img.rocket.new/generatedImages/rocket_gen_img_17fcb1924-1764752495265.png",
+      alt: "Golden yellow kesar mangoes with smooth skin arranged on white marble surface",
+      season: "April - June",
+      taste: "Sweet, Rich, Aromatic",
+      texture: "Smooth, Non-fibrous",
+      bestFor: ["Fresh Eating", "Desserts", "Smoothies"],
+      priceRange: "₹800 - ₹1,200/kg",
+      availability: "Pre-Order",
+      rating: 5,
+      description:
+        "The undisputed king of mangoes, known for its saffron-colored flesh and unmatched sweetness."
+    },
+    {
       id: 3,
       name: "Dasheri",
       scientificName: "Mangifera indica 'Dasheri'",
-      image: "https://img.rocket.new/generatedImages/rocket_gen_img_15256be73-1765888820992.png",
+      image: dasheriMangoImg,//"https://img.rocket.new/generatedImages/rocket_gen_img_15256be73-1765888820992.png",
       alt: "Elongated green-yellow Dasheri mangoes with characteristic oblong shape on wooden cutting board",
       season: "June - July",
       taste: "Sweet, Aromatic",
       texture: "Soft, Melting",
       bestFor: ["Fresh Eating", "Traditional Recipes"],
       priceRange: "₹400 - ₹600/kg",
-      availability: "In Season",
+      availability: "Pre-Order",
       rating: 4.7,
       description:
         "North Indian favorite with elongated shape and exceptionally aromatic flesh."
@@ -55,7 +59,7 @@ const MangoVarieties = ({ onOrderClick }) => {
       id: 4,
       name: "Langra",
       scientificName: "Mangifera indica 'Langra'",
-      image: "https://img.rocket.new/generatedImages/rocket_gen_img_1953a6102-1764831688571.png",
+      image: langdoMangoImg, //"https://img.rocket.new/generatedImages/rocket_gen_img_1953a6102-1764831688571.png",
       alt: "Green-skinned Langra mangoes with unique appearance arranged in rustic clay bowl",
       season: "July - August",
       taste: "Sweet-Tangy Balance",
@@ -69,48 +73,32 @@ const MangoVarieties = ({ onOrderClick }) => {
     },
     {
       id: 5,
-      name: "Totapuri",
+      name: "Rajapuri",
       scientificName: "Mangifera indica 'Totapuri'",
-      image: "https://img.rocket.new/generatedImages/rocket_gen_img_1eaa4ac3e-1765377558677.png",
+      image: rajapuriMangoImg,//"https://img.rocket.new/generatedImages/rocket_gen_img_1eaa4ac3e-1765377558677.png",
       alt: "Pointed beak-shaped Totapuri mangoes with yellow-green skin on banana leaf",
       season: "May - July",
       taste: "Tangy, Mildly Sweet",
       texture: "Firm, Crunchy",
       bestFor: ["Cooking", "Pickles", "Salads"],
       priceRange: "₹250 - ₹400/kg",
-      availability: "In Season",
+      availability: "Pre-Order",
       rating: 4.5,
       description:
         "Distinctive parrot-beak shape makes it perfect for culinary applications and traditional dishes."
-    },
-    {
-      id: 6,
-      name: "Banganapalli",
-      scientificName: "Mangifera indica 'Banganapalli'",
-      image: "https://img.rocket.new/generatedImages/rocket_gen_img_18dc256bf-1765377558919.png",
-      alt: "Large golden Banganapalli mangoes with smooth texture displayed in woven bamboo basket",
-      season: "May - June",
-      taste: "Mildly Sweet, Delicate",
-      texture: "Smooth, Less Fibrous",
-      bestFor: ["Fresh Eating", "Juice", "Pulp"],
-      priceRange: "₹350 - ₹550/kg",
-      availability: "In Season",
-      rating: 4.7,
-      description:
-        "Andhra Pradesh's pride, known for its large size and subtle sweetness."
     }
   ];
 
-  const getAvailabilityColor = (status) => {
-    switch (status) {
-      case "In Season":
-        return "bg-success/10 text-success border-success/20";
-      case "Pre-Order":
-        return "bg-warning/10 text-warning border-warning/20";
-      default:
-        return "bg-muted text-muted-foreground border-border";
-    }
-  };
+  // const getAvailabilityColor = (status) => {
+  //   switch (status) {
+  //     case "Pre-Order":
+  //       return "bg-success-subtle text-success border-success";
+  //     case "Waitlist":
+  //       return "bg-warning-subtle text-warning border-warning";
+  //     default:
+  //       return "bg-muted text-muted-foreground border";
+  //   }
+  // };
 
   return (
     <section className="py-24 bg-card">
@@ -145,19 +133,19 @@ const MangoVarieties = ({ onOrderClick }) => {
                 />
 
                 {/* Availability */}
-                <div
+                {/* <div
                   className={`position-absolute top-4 right-4 px-3 py-1.5 rounded-full text-xs fw-semibold border ${getAvailabilityColor(
                     variety.availability
                   )}`}
                 >
                   {variety.availability}
-                </div>
+                </div> */}
 
                 {/* Rating */}
-                <div className="position-absolute d-flex gap-1 star-badge px-3 z-5 py-1 bg-transparent rounded-pill fw-semibold text-xs text-success border shadow-organic">
+                {/* <div className="position-absolute d-flex gap-1 star-badge px-3 z-5 py-1 bg-transparent rounded-pill fw-semibold text-xs text-success border shadow-organic">
                   <Icon name="StarIcon" size={16} className="text-warning" variant="solid" />
                   <span className="fw-bold text-sm text-heading">{variety.rating}</span>
-                </div>
+                </div> */}
               </div>
 
               {/* Content */}
@@ -204,19 +192,19 @@ const MangoVarieties = ({ onOrderClick }) => {
 
                 {/* Price + CTA */}
                 <div className="d-flex align-items-center justify-content-between pt-4">
-                  <div>
+                  {/* <div>
                     <p className="text-xs m-0">Price Range</p>
-                    <p className="fw-bold text-lg text-primary">
+                    <p className="fw-bold text-lg text-primary m-0">
                       {variety.priceRange}
                     </p>
-                  </div>
+                  </div> */}
                   <button
                     onClick={() => onOrderClick(variety)}
                     disabled={variety.availability === "Out of Season"}
-                    className="d-flex align-items-center gap-2 px-4 py-2 btn btn-success text-white rounded-lg font-semibold text-sm"
+                    className="d-flex align-items-center justify-content-center gap-2 px-4 py-2 btn btn-success text-white w-100 rounded-lg font-semibold text-sm"
                   >
                     <Icon name="ShoppingCartIcon" size={18} variant="solid" />
-                    Order
+                    Pre Order
                   </button>
                 </div>
               </div>

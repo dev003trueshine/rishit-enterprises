@@ -1,5 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit';
-
+import chikoImg from '../../assets/images/chikoo.jpeg';
+import goldenMangoImg from '../../assets/images/golden-kesar-mango.jpeg';
+import kesarMangoImg from '../../assets/images/kesar.jpeg';
+import rajapuriMangoImg from '../../assets/images/Rajapuri-Mango.webp';
+import langdoMangoImg from '../../assets/images/langdo-mango.webp';
+import dasheriMangoImg from '../../assets/images/dasheri-mango.jpg';
+import mangoPulpImg from '../../assets/images/mango-pulp.jpeg';
 // // 1. Create the async thunk for fetching products
 // export const fetchProducts = createAsyncThunk(
 //   'product/fetchProducts',
@@ -14,92 +20,97 @@ import { createSlice } from '@reduxjs/toolkit';
 //   }
 // );
 const initialState = {
-    products: [
+    "products": [
         {
-            id: 1,
-            name: "Alphonso Mango",
-            category: "Mangoes",
-            price: 450,
-            unit: "per dozen",
-            image:
-                "https://img.rocket.new/generatedImages/rocket_gen_img_17fcb1924-1764752495265.png",
-            alt: "Dozen fresh golden yellow Alphonso mangoes arranged in wooden crate",
-            badge: "Premium",
-            rating: 4.9,
-            reviews: 234,
-            inStock: true,
+            "id": 1,
+            "name": "Premium Chikoo",
+            "category": "Chikoo",
+            "price": 120,
+            "unit": "per kg",
+            "image": chikoImg,
+            "alt": "Brown ripe chikoo sapodilla fruits in natural fiber basket",
+            "rating": 4.7,
+            "reviews": 156,
+            "inStock": true
         },
         {
-            id: 2,
-            name: "Kesar Mango",
-            category: "Mangoes",
-            price: 380,
-            unit: "per dozen",
-            image:
-                "https://img.rocket.new/generatedImages/rocket_gen_img_193d9ad6b-1765888820981.png",
-            alt: "Fresh orange-yellow Kesar mangoes with red blush on white background",
-            badge: "Seasonal",
-            rating: 4.8,
-            reviews: 189,
-            inStock: true,
+            "id": 2,
+            "name": "Kesar Mango",
+            "category": "Mangoes",
+            "price": 380,
+            "unit": "per dozen",
+            "image": kesarMangoImg,
+            "alt": "Fresh orange-yellow Kesar mangoes with red blush on white background",
+            "badge": "Seasonal",
+            "rating": 4.8,
+            "reviews": 189,
+            "inStock": false
         },
         {
-            id: 3,
-            name: "Premium Chikoo",
-            category: "Chikoo",
-            price: 120,
-            unit: "per kg",
-            image:
-                "https://images.unsplash.com/photo-1587921283692-a0cf685545a9",
-            alt: "Brown ripe chikoo sapodilla fruits in natural fiber basket",
-            rating: 4.7,
-            reviews: 156,
-            inStock: true,
+            "id": 3,
+            "name": "Rajapuri Mango",
+            "category": "Mangoes",
+            "price": 400,
+            "unit": "per dozen",
+            "image": rajapuriMangoImg,
+            "alt": "Large green and red Rajapuri mangoes",
+            "rating": 4.5,
+            "reviews": 0,
+            "inStock": false
         },
         {
-            id: 4,
-            name: "Mango Pulp",
-            category: "Pulp",
-            price: 280,
-            unit: "per kg",
-            image:
-                "https://images.unsplash.com/photo-1631606517999-3778ba6f7d0b",
-            alt: "Glass bowl filled with smooth golden mango pulp on wooden table",
-            badge: "Best Seller",
-            rating: 5.0,
-            reviews: 312,
-            inStock: true,
+            "id": 4,
+            "name": "Langdo Mango",
+            "category": "Mangoes",
+            "price": 350,
+            "unit": "per dozen",
+            "image": langdoMangoImg,
+            "alt": "Sweet green Langdo mangoes",
+            "rating": 4.7,
+            "reviews": 0,
+            "inStock": false
         },
         {
-            id: 5,
-            name: "Totapuri Mango",
-            category: "Mangoes",
-            price: 320,
-            unit: "per dozen",
-            image:
-                "https://img.rocket.new/generatedImages/rocket_gen_img_1eaa4ac3e-1765377558677.png",
-            alt: "Green-yellow Totapuri mangoes with pointed tips in woven basket",
-            rating: 4.6,
-            reviews: 98,
-            inStock: true,
+            "id": 5,
+            "name": "Dasheri Mango",
+            "category": "Mangoes",
+            "price": 300,
+            "unit": "per dozen",
+            "image": dasheriMangoImg,
+            "alt": "Long fiberless Dasheri mangoes",
+            "rating": 4.6,
+            "reviews": 0,
+            "inStock": false
         },
         {
-            id: 6,
-            name: "Chikoo Pulp",
-            category: "Pulp",
-            price: 240,
-            unit: "per kg",
-            image:
-                "https://img.rocket.new/generatedImages/rocket_gen_img_1ea7b59bf-1765992410929.png",
-            alt: "Brown chikoo pulp in glass jar with fresh chikoo fruits beside",
-            rating: 4.8,
-            reviews: 145,
-            inStock: true,
+            "id": 6,
+            "name": "Golden Mango",
+            "category": "Mangoes",
+            "price": 420,
+            "unit": "per dozen",
+            "image": goldenMangoImg,
+            "alt": "Bright golden yellow mangoes",
+            "rating": 4.8,
+            "reviews": 0,
+            "inStock": false
         },
+        {
+            "id": 7,
+            "name": "Mango Pulp",
+            "category": "Pulp",
+            "price": 280,
+            "unit": "per kg",
+            "image": mangoPulpImg,
+            "alt": "Glass bowl filled with smooth golden mango pulp on wooden table",
+            "badge": "Best Seller",
+            "rating": 5.0,
+            "reviews": 312,
+            "inStock": false
+        }
     ],
-    loading: false,
-    error: null,
-};
+    "loading": false,
+    "error": null
+}
 
 const productSlice = createSlice({
     name: 'product',

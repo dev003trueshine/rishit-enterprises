@@ -96,10 +96,10 @@ export default function LocationInfo() {
                       schools, and anyone interested in organic farming
                       practices.
                     </p>
-                    <button className="d-inline-flex align-items-center gap-2 px-4 py-2 btn btn-primary text-white rounded-lg fw-semibold text-sm">
+                    <a href="tel:+918238157599" className="d-inline-flex align-items-center gap-2 px-4 py-2 btn btn-primary text-white rounded-lg fw-semibold text-sm">
                       <Icon name="PhoneIcon" size={16} />
                       <span>Call to Schedule</span>
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>

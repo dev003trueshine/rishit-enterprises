@@ -20,45 +20,63 @@ export default function SeasonalCalendar() {
   const seasonalFruits = [
     {
       id: 1,
-      name: "Alphonso Mango",
-      months: ["March", "April", "May", "June"],
+      name: "Kesar Mango",
+      months: ["April", "May", "June"],
       icon: "🥭",
       color: "bg-warning-subtle text-warning",
       availability: "peak",
     },
+
     {
       id: 2,
-      name: "Kesar Mango",
-      months: ["April", "May", "June", "July"],
+      name: "Dasheri Mango",
+      months: ["April", "May", "June"],
+      icon: "🥭",
+      color: "bg-warning-subtle text-warning",
+      availability: "peak",
+    },
+
+    {
+      id: 3,
+      name: "Rajapuri Mango",
+      months: ["April", "May", "June"],
       icon: "🥭",
       color: "bg-warning-subtle text-warning",
       availability: "peak",
     },
     {
-      id: 3,
-      name: "Totapuri Mango",
-      months: ["May", "June", "July", "August"],
+      id: 4,
+      name: "Langdo Mango",
+      months: ["April", "May", "June"],
       icon: "🥭",
       color: "bg-warning-subtle text-warning",
       availability: "available",
     },
     {
-      id: 4,
-      name: "Premium Chikoo",
-      months: ["October", "November", "December", "January", "February"],
-      icon: "🤎",
-      color: "bg-chikoo/20 text-chikoo",
+      id: 5,
+      name: "Golden Kesar Mango",
+      months: ["April", "May", "June"],
+      icon: "🥭",
+      color: "bg-warning-subtle text-warning",
       availability: "peak",
     },
     {
-      id: 5,
+      id: 6,
+      name: "Premium Chikoo",
+      months: ["October", "November", "December", "January", "February", "March", "April", "May"],
+      icon: "🤎",
+      color: "bg-primary-subtle text-chikoo",
+      availability: "peak",
+    },
+    {
+      id: 7,
       name: "Mango Pulp",
       months: [
         "January", "February", "March", "April", "May", "June",
         "July", "August", "September", "October", "November", "December"
       ],
       icon: "🥤",
-      color: "bg-primary/20 text-primary",
+      color: "bg-primary-subtle text-primary",
       availability: "available",
     },
   ];
@@ -81,7 +99,7 @@ export default function SeasonalCalendar() {
   };
 
   return (
-    <section className="py-24 bg-card">
+    <section className="py-24 bg-body">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">

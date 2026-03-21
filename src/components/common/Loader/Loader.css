@@ -1,0 +1,24 @@
+.global-loader-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    backdrop-filter: blur(3px); /* Optional: adds a slight blur to the background */
+}
+
+.global-loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.global-loader-gif {
+    width: 150px; /* Adjust the size of your loader if necessary */
+    height: auto;
+}

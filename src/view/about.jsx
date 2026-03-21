@@ -33,12 +33,12 @@ const About = () => {
             <section className="py-24 bg-gray-900 ">
                 <div className="container mx-auto px-4">
                     <div className="d-grid lg-grid-cols-2 gap-12 align-items-center md-gap-16 gap-3 mb-16">
-                        <div>
+                       <div>
                             <h2 className="fw-bold text-4xl mb-4">From Our Orchards to Your Table</h2>
 
                             <div className="d-flex flex-column gap-3">
                                 <p className="text-lg leading-relaxed m-0">
-                                    <strong>Rishit Fruits</strong> was founded with a simple yet powerful mission:
+                                    <strong>Rishit Fruits</strong> was co-founded by <strong>Vikas Patel</strong>, <strong>Tejas Patel</strong>, and <strong>Chirag Patel</strong> with a simple yet powerful mission:
                                     to bridge the gap between our sun-ripened orchards and your home. Our journey
                                     began in 2024, driven by a passion for delivering fruits in their purest form—naturally
                                     ripened, chemical-free, and bursting with authentic flavor. What started as a
@@ -66,7 +66,7 @@ const About = () => {
                             </div>
                         </div>
                         <div className="">
-                            <img src={mango} alt="About Us Image" className="w-100 rounded-xl shadow-organic shadow-lg object-cover h-96"></img>
+                            <img src={mango} alt="About Us" className="w-100 rounded-xl shadow-organic shadow-lg object-cover h-96"></img>
                         </div>
                     </div>
                     {/* timeline Section */}

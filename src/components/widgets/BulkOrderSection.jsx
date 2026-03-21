@@ -46,29 +46,6 @@ const BulkOrderSection = ({ onContactClick }) => {
     },
   ];
 
-  const benefits = [
-    {
-      icon: "TruckIcon",
-      title: "Reliable Supply",
-      description: "Consistent quality and timely deliveries throughout the season",
-    },
-    {
-      icon: "CurrencyRupeeIcon",
-      title: "Competitive Pricing",
-      description: "Volume-based discounts and flexible payment terms",
-    },
-    {
-      icon: "UserGroupIcon",
-      title: "Dedicated Support",
-      description: "Personal account manager for all your requirements",
-    },
-    {
-      icon: "ShieldCheckIcon",
-      title: "Quality Assurance",
-      description: "Farm-fresh guarantee with replacement policy",
-    },
-  ];
-
   return (
     <section className="py-24 bg-card">
       <div className="container mx-auto px-4">

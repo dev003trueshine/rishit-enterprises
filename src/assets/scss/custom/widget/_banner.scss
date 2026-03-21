@@ -1,33 +1,50 @@
-.banner-container {
-    min-height: 92vh;
-    height: 100%;
-    .banner-content {
-        position: relative;
+.banner-slider {
+    width: 100%;
 
-        &::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            height: 100%;
-            width: 100%;
-            z-index: 1;
-            background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-        }
+
+    .banner-slide {
+        height: 750px;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: flex;
+        align-items: center;
     }
 
-    &.general-slider {
-        .slick-dots {
+    .banner-overlay {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg,
+                rgba(0, 0, 0, 0.7) 0%,
+                rgba(0, 0, 0, 0.4) 40%,
+                rgba(0, 0, 0, 0.1) 70%);
+        display: flex;
+        align-items: center;
+    }
 
-            position: absolute;
-            bottom: 50px;
-            left: 0;
-            right: 0;
-            gap: 24px;
+    .banner-content {
+        max-width: 750px;
+        padding-left: 120px;
+        color: white;
+    }
+
+    .slick-dots {
+
+        position: absolute;
+        bottom: 50px;
+        left: 0;
+        right: 0;
+        gap: 24px;
 
 
-        }
+    }
 
-        .slick-dots li button {
+    .slick-dots li {
+        margin: 0 10px;
+        width: initial;
+        height: initial;
+
+        button {
             // width: 10px;
             // height: 10px;
             padding: 0;
@@ -38,18 +55,17 @@
                 content: none;
             }
         }
+    }
 
-        .slick-dots li button:hover {
-            background-color: var(--bs-warning);
-        }
+    .slick-dots li button:hover {
+        background-color: var(--bs-warning);
+    }
 
-        .slick-dots li.slick-active button {
-            width: 32px;
-            height: 12px;
-            border-radius: 8px;
-            background-color: var(--bs-warning);
-        }
-
+    .slick-dots li.slick-active button {
+        width: 32px;
+        height: 12px;
+        border-radius: 8px;
+        background-color: var(--bs-warning);
     }
 }
 
@@ -85,5 +101,36 @@
         height: 12px;
         border-radius: 8px;
         background-color: var(--bs-primary);
+    }
+}
+
+
+/* responsive */
+
+@media (max-width: 1024px) {
+    .banner-slider {
+        .banner-content {
+            padding-left: 60px;
+        }
+    }
+    .general-slider {
+    .slick-dots {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        position: absolute;
+        bottom: 35px;
+        left: 0;
+        right: 0;
+    }
+}
+}
+
+@media (max-width: 768px) {
+    .banner-slider {
+        .banner-content {
+            padding: 30px;
+        }
     }
 }

@@ -14,7 +14,7 @@ const FruitsCatalog = () => {
 	const [organic, setOrganic] = useState(false);
 	const [available, setAvailable] = useState(false);
 
-	const mockProducts: Product[] = [
+	const mockProducts = [
 		{
 			id: 1,
 			name: "Alphonso Mango",
@@ -28,7 +28,7 @@ const FruitsCatalog = () => {
 			organic: true,
 			seasonal: true,
 			bulkPrice: 90,
-			rating: 4.9,
+			rating: 5,
 			reviews: 156,
 			minQuantity: 10,
 			quantityStep: 10
@@ -317,7 +317,7 @@ const FruitsCatalog = () => {
 							</div>
 						</div>
 						<div className="col">
-							<img src={mango} alt="About Us Image" className="w-100 rounded-xl shadow-organic shadow-lg object-cover h-96"></img>
+							<img src={mango} alt="About Us" className="w-100 rounded-xl shadow-organic shadow-lg object-cover h-96"></img>
 						</div>
 					</div>
 				</div>

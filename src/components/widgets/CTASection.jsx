@@ -4,9 +4,9 @@ import Icon from "components/ui/AppIcon";
 export default function CTASection({ className = "" }) {
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent(
-      "Hi! I just learned about your farm and would like to place an order for fresh fruits."
+      "Hello Rishit Enterprise! I'm interested in your business services. Can you provide more details on bulk orders and pricing? Thanks!"
     );
-    window.open(`https://wa.me/919876543210?text=${message}`, "_blank");
+    window.open(`https://wa.me/918238157599?text=${message}`, "_blank");
   };
 
   return (
