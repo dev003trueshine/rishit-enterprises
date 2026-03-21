@@ -5,7 +5,7 @@ const SeasonalAvailability = () => {
     {
       month: "January",
       varieties: [
-        { name: "Alphonso", status: "unavailable" },
+        { name: "Rajapuri", status: "unavailable" },
         { name: "Kesar", status: "unavailable" },
         { name: "Dasheri", status: "unavailable" },
         { name: "Langra", status: "unavailable" }
@@ -14,7 +14,7 @@ const SeasonalAvailability = () => {
     {
       month: "February",
       varieties: [
-        { name: "Alphonso", status: "unavailable" },
+        { name: "Rajapuri", status: "unavailable" },
         { name: "Kesar", status: "unavailable" },
         { name: "Dasheri", status: "unavailable" },
         { name: "Langra", status: "unavailable" }
@@ -23,7 +23,7 @@ const SeasonalAvailability = () => {
     {
       month: "March",
       varieties: [
-        { name: "Alphonso", status: "unavailable" },
+        { name: "Rajapuri", status: "unavailable" },
         { name: "Kesar", status: "unavailable" },
         { name: "Dasheri", status: "unavailable" },
         { name: "Langra", status: "unavailable" }
@@ -32,46 +32,46 @@ const SeasonalAvailability = () => {
     {
       month: "April",
       varieties: [
-        { name: "Alphonso", status: "available" },
-        { name: "Kesar", status: "unavailable" },
-        { name: "Dasheri", status: "unavailable" },
-        { name: "Langra", status: "unavailable" }
+        { name: "Rajapuri", status: "available" },
+        { name: "Kesar", status: "available" },
+        { name: "Dasheri", status: "available" },
+        { name: "Langra", status: "available" }
       ]
     },
     {
       month: "May",
       varieties: [
-        { name: "Alphonso", status: "peak" },
-        { name: "Kesar", status: "available" },
-        { name: "Dasheri", status: "unavailable" },
-        { name: "Langra", status: "unavailable" }
+        { name: "Rajapuri", status: "peak" },
+        { name: "Kesar", status: "peak" },
+        { name: "Dasheri", status: "peak" },
+        { name: "Langra", status: "peak" }
       ]
     },
     {
       month: "June",
       varieties: [
-        { name: "Alphonso", status: "ending" },
-        { name: "Kesar", status: "peak" },
-        { name: "Dasheri", status: "available" },
-        { name: "Langra", status: "unavailable" }
+        { name: "Rajapuri", status: "ending" },
+        { name: "Kesar", status: "ending" },
+        { name: "Dasheri", status: "ending" },
+        { name: "Langra", status: "ending" }
       ]
     },
     {
       month: "July",
       varieties: [
-        { name: "Alphonso", status: "unavailable" },
-        { name: "Kesar", status: "ending" },
-        { name: "Dasheri", status: "peak" },
-        { name: "Langra", status: "available" }
+        { name: "Rajapuri", status: "unavailable" },
+        { name: "Kesar", status: "unavailable" },
+        { name: "Dasheri", status: "unavailable" },
+        { name: "Langra", status: "unavailable" }
       ]
     },
     {
       month: "August",
       varieties: [
-        { name: "Alphonso", status: "unavailable" },
+        { name: "Rajapuri", status: "unavailable" },
         { name: "Kesar", status: "unavailable" },
-        { name: "Dasheri", status: "ending" },
-        { name: "Langra", status: "peak" }
+        { name: "Dasheri", status: "unavailable" },
+        { name: "Langra", status: "unavailable" }
       ]
     }
   ];
@@ -142,7 +142,7 @@ const SeasonalAvailability = () => {
               <thead>
                 <tr className="bg-primary text-white">
                   <th className="px-6 py-4 text-left fw-bold">Month</th>
-                  <th className="px-6 py-4 text-center fw-bold">Alphonso</th>
+                  <th className="px-6 py-4 text-center fw-bold">Rajapuri</th>
                   <th className="px-6 py-4 text-center fw-bold">Kesar</th>
                   <th className="px-6 py-4 text-center fw-bold">Dasheri</th>
                   <th className="px-6 py-4 text-center fw-bold">Langra</th>
