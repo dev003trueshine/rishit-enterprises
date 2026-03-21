@@ -20,6 +20,7 @@ const Footer = () => {
     { label: "Home", href: "/" },
     // { label: "Fruits Catalog", href: "/fruits-catalog" },
     { label: "Mango Products", href: "/mango-products" },
+    { label: "Gallery", href: "/gallery" },
     { label: "About Us", href: "/about" },
     { label: "Contact", href: "/contact" },
     { label: "Mango Pulp", href: "/mango-products" },

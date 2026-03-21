@@ -12,6 +12,7 @@ const Header = ({ className = "" }) => {
     { label: "Home", href: "/", external: true },
     // { label: "Fruits Catalog", href: "/fruits-catalog" },
     { label: "Mango Products", href: "/mango-products" },
+    { label: "Gallery", href: "/gallery" },
     { label: "About Us", href: "/about" },
     { label: "Contact", href: "/contact" },
   ];
