@@ -13,7 +13,7 @@ const Footer = () => {
     const message = encodeURIComponent(
       "Hello Rishit Enterprise! I'm interested in your business services. Can you provide more details on bulk orders and pricing? Thanks!"
     );
-    window.open(`https://wa.me/919876543210?text=${message}`, "_blank");
+    window.open(`https://wa.me/+919876543210?text=${message}`, "_blank");
   };
 
   const quickLinks = [
@@ -22,14 +22,15 @@ const Footer = () => {
     { label: "Mango Products", href: "/mango-products" },
     { label: "About Us", href: "/about" },
     { label: "Contact", href: "/contact" },
+    { label: "Mango Pulp", href: "/mango-products" },
   ];
 
   const productCategories = [
-    { label: "Kesar Mangoes", href: "/product-detail" },
-    { label: "Premium Chikoo", href: "/product-detail" },
-    { label: "Mango Pulp", href: "/mango-products" },
-    { label: "Bulk Orders", href: "/contact" },
-    { label: "Pricing Plan", href: "/pricing" },
+    // { label: "Kesar Mangoes", href: "/product-detail" },
+    // { label: "Premium Chikoo", href: "/product-detail" },
+    // { label: "Mango Pulp", href: "/mango-products" },
+    // { label: "Bulk Orders", href: "/contact" },
+    // { label: "Pricing Plan", href: "/pricing" },
   ];
 
   return (
@@ -115,7 +116,7 @@ const Footer = () => {
           </div>
 
           {/* Products */}
-          <div>
+          {/* <div>
             <h3 className="fw-bold text-lg mb-3 text-white">
               Our Products
             </h3>
@@ -136,6 +137,71 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
+          </div> */}
+          {/* Contact Info */}
+          <div>
+            <h3 className="fw-bold text-lg mb-3 text-white">
+              Inquire & DM Us
+            </h3>
+            <div className="list-inline m-0 p-0 d-flex flex-column gap-3 footer-contact">
+
+              <div className="d-flex gap-12">
+                <Icon
+                  name="PhoneIcon"
+                  size={20}
+                  className="text-warning flex-shrink-0"
+                />
+                <a
+                  href="tel:+918238157599"
+                  className="text-white text-sm"
+                >
+                  +91 8238157599
+                </a> <span className="text-white text-sm">Vikas Patel</span>
+              </div>
+
+              <div className="d-flex gap-12">
+                <Icon
+                  name="PhoneIcon"
+                  size={20}
+                  className="text-warning flex-shrink-0"
+                />
+                <a
+                  href="tel:+919558287453"
+                  className="text-white text-sm"
+                >
+                  +91 95582 87453
+                </a> <span className="text-white text-sm">Tejas Patel</span>
+              </div>
+
+              <div className="d-flex gap-12">
+                <Icon
+                  name="PhoneIcon"
+                  size={20}
+                  className="text-warning flex-shrink-0"
+                />
+                <a
+                  href="tel:+918238939658"
+                  className="text-white text-sm"
+                >
+                  +91 8238939658
+                </a> <span className="text-white text-sm">Chirag Patel</span>
+              </div>
+
+              <div className="d-flex gap-12">
+                <Icon
+                  name="EnvelopeIcon"
+                  size={20}
+                  className="text-warning flex-shrink-0"
+                />
+                <a
+                  href="mailto:rishitenterprise.official@gmail.com"
+                  className="text-white text-sm"
+                >
+                  rishitenterprise.official@gmail.com
+                </a>
+              </div>
+            </div>
+
           </div>
 
           {/* Contact Info */}
@@ -158,21 +224,7 @@ const Footer = () => {
 
               <div className="d-flex gap-12">
                 <Icon
-                  name="PhoneIcon"
-                  size={20}
-                  className="text-warning flex-shrink-0"
-                />
-                <a
-                  href="tel:+919876543210"
-                  className="text-white text-sm"
-                >
-                  +91 8238157599
-                </a>
-              </div>
-
-              <div className="d-flex gap-12">
-                <Icon
-                  name="LinkIcon"
+                  name="instagramIcon"
                   size={20}
                   className="text-warning flex-shrink-0"
                 />
@@ -187,15 +239,16 @@ const Footer = () => {
 
               <div className="d-flex gap-12">
                 <Icon
-                  name="EnvelopeIcon"
+                  name="facebookIcon"
                   size={20}
                   className="text-warning flex-shrink-0"
                 />
                 <a
-                  href="mailto:rishitenterprise.official@gmail.com"
+                  target="_blank"
+                  href="https://www.facebook.com/share/1CLUVReqtv/"
                   className="text-white text-sm"
                 >
-                  rishitenterprise.official@gmail.com
+                  Rishit Enterprise
                 </a>
               </div>
 
@@ -238,10 +291,10 @@ const Footer = () => {
                 Terms of Service
               </Link>
             </div> */}
-              <p className="text-sm text-white m-0">
-            Designed & Developed by 
-            <a href="https://www.linkedin.com/in/appzone-infinity-0a316225a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" className="text-white fw-semibold"> AppzoneInfinity</a>
-          </p>
+            <p className="text-sm text-white m-0">
+              Designed & Developed by
+              <a href="https://www.linkedin.com/in/appzone-infinity-0a316225a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" className="text-white fw-semibold"> AppzoneInfinity</a>
+            </p>
           </div>
         </div>
       </div>

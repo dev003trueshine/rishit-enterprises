@@ -167,7 +167,7 @@ const MangoPulpProducts = ({ onOrderClick }) => {
                     </div> */}
                     <button
                       onClick={() => onOrderClick(product)}
-                      className="d-flex align-items-center gap-2 px-4 py-2 btn btn-success text-white rounded-lg font-semibold text-sm"
+                      className="d-flex align-items-center justify-content-center gap-2 w-100 px-4 py-2 btn btn-success text-white rounded-lg font-semibold text-sm"
                     >
                       <Icon name="ShoppingBagIcon" size={18} variant="solid" />
                       Pre Order

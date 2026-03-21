@@ -2,6 +2,7 @@ import React from 'react';
 import * as HeroIcons from '@heroicons/react/24/outline';
 import * as HeroIconsSolid from '@heroicons/react/24/solid';
 import { QuestionMarkCircleIcon } from '@heroicons/react/24/outline';
+import { FaFacebook, FaInstagram } from 'react-icons/fa';
 
 function Icon({
   name,
@@ -13,7 +14,13 @@ function Icon({
   ...props
 }) {
   const iconSet = variant === 'solid' ? HeroIconsSolid : HeroIcons;
-  const IconComponent = iconSet[name];
+  let IconComponent = iconSet[name];
+
+  if (name === 'facebookIcon') {
+    IconComponent = FaFacebook;
+  } else if (name === 'instagramIcon') {
+    IconComponent = FaInstagram;
+  }
 
   if (!IconComponent) {
     return (

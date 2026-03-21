@@ -33,7 +33,7 @@ export default function ContactMethods({
       bgColor: "bg-primary-subtle",
       iconColor: "text-primary",
     },
-        {
+    {
       id: "phone2",
       icon: "PhoneIcon",
       title: "Phone Call Chirag Patel",
@@ -59,7 +59,7 @@ export default function ContactMethods({
     },
     {
       id: "instagram",
-      icon: "LinkIcon",
+      icon: "instagramIcon",
       title: "Follow on Instagram",
       description:
         "Stay updated with our latest farm activities, fresh arrivals, and behind-the-scenes content.",
@@ -71,7 +71,7 @@ export default function ContactMethods({
     },
     {
       id: "facebook",
-      icon: "LinkIcon",
+      icon: "facebookIcon",
       title: "Follow on Facebook",
       description:
         "Join our Facebook community for updates, customer stories, and exclusive offers.",
