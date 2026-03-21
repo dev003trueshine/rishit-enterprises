@@ -9,6 +9,7 @@ import './assets/scss/custom.scss';
 import { store } from './store/store';
 import { IndexRouter } from './router/indexRouter';
 import reportWebVitals from './reportWebVitals';
+import ScrollToTop from './components/common/ScrollToTop';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -29,6 +30,7 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           {renderRoutes(IndexRouter)}
         </Routes>

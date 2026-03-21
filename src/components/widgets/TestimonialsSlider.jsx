@@ -84,11 +84,11 @@ const TestimonialsSlider = () => {
 
         {/* Slider */}
         <div className="max-w-4xl mx-auto">
-          <div className="slick general-slider">
+          <div className="slick general-slider slick-equal-height">
             <Slider {...settings}>
               {testimonials.map((item, index) => (
-                <div className="slider" key={index}>
-                  <div className="bg-body rounded-2xl p-12 position-relative">
+                <div className="slider p-2" key={index}>
+                  <div className="bg-body rounded-2xl p-12 position-relative h-100 d-flex flex-column">
                     {/* Stars */}
                     <div className="d-flex align-items-center gap-1 mb-4 svg-bg-warning">
                       {[1, 2, 3, 4, 5].map((_, i) => (
@@ -102,9 +102,9 @@ const TestimonialsSlider = () => {
                     </p>
 
                     {/* Product */}
-                    <div className="d-inline-flex align-items-center gap-2 px-4 py-2 bg-primary-subtle rounded-full mb-4">
+                    <div className="d-inline-flex align-items-center gap-2 px-4 py-2 rounded-full fw-bold mb-4">
                       <Icon name="ShoppingBagIcon" size={16} className="text-primary" />
-                      <span className="text-sm text-primary fw-medium">
+                      <span className="text-sm text-primary fw-bold lh-0">
                         {item.product}
                       </span>
                     </div>
@@ -135,7 +135,7 @@ const TestimonialsSlider = () => {
                       </div>
                     </div>
 
-                    <div className="d-flex align-items-center justify-content-between mt-4 pt-8 border-top" />
+                    <div className="d-flex align-items-center justify-content-between mt-4 lg:mt-0 pt-8" />
                   </div>
                 </div>
               ))}
