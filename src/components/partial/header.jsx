@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Icon from "components/ui/AppIcon";
 
-import logo from "../../assets/images/logo2.png";
+import logo from "../../assets/images/logo.jpeg";
 
 
 const Header = ({ className = "" }) => {
@@ -25,7 +25,7 @@ const Header = ({ className = "" }) => {
   };
 
   return (
-    <header 
+    <header
       className={`w-full bg-card border-bottom position-sticky top-0 z-9 ${className}`}
     >
       <div className="container mx-auto px-4">
