@@ -13,7 +13,7 @@ const Footer = () => {
     const message = encodeURIComponent(
       "Hello Rishit Enterprise! I'm interested in your business services. Can you provide more details on bulk orders and pricing? Thanks!"
     );
-    window.open(`https://wa.me/+919876543210?text=${message}`, "_blank");
+    window.open(`https://wa.me/+918238157599?text=${message}`, "_blank");
   };
 
   const quickLinks = [
