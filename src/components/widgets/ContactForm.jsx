@@ -65,7 +65,7 @@ const inquiryTypes = [ { value: 'general', label: 'General Inquiry' }, { value: 
                     id="phone"
                     name="phone"
                     className="form-control"
-                    placeholder="98765 43210"
+                    placeholder="8238157599"
                   />
                 </div>
 
