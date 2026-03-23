@@ -6,7 +6,7 @@ import CatalogHeader from "../components/widgets/CatalogHeader";
 import FilterBar from "../components/widgets/FilterBar";
 import ProductGrid from "../components/widgets/ProductGrid.jsx";
 
-import mango from "../assets/images/banner-logo.png";
+import mango from "../assets/images/banner-logo.webp";
 
 const FruitsCatalog = () => {
 	const [category, setCategory] = useState("all");

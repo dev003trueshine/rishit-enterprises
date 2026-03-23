@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Icon from "components/ui/AppIcon";
 
-import logo from "../../assets/images/logo.jpeg";
+import logo from "../../assets/images/logo.webp";
 
 
 const Header = ({ className = "" }) => {

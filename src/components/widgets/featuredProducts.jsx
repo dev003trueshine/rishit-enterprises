@@ -21,7 +21,7 @@ export default function FeaturedProducts({ onWhatsAppOrder }) {
         <div className="text-center mb-12">
           <div className="d-inline-flex align-items-center gap-2 px-3 py-2 bg-primary-subtle rounded-pill mb-3">
             <Icon name="StarIcon" size={20} className="text-warning" variant="solid" />
-            <span className="h6 fw-semibold text-sm text-primary m-0 text-uppercase tracking-wide">
+            <span className="h6 fw-semibold text-sm text-warning m-0 text-uppercase tracking-wide">
               Featured Products
             </span>
           </div>

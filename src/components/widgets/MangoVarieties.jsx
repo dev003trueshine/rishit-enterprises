@@ -1,11 +1,11 @@
 import AppImage from "components/ui/AppImage";
 import Icon from "components/ui/AppIcon";
-import goldenMangoImg from '../../assets/images/golden-kesar-mango.jpeg';
-import kesarMangoImg from '../../assets/images/kesar.jpeg';
+import goldenMangoImg from '../../assets/images/golden-kesar-mango.webp';
+import kesarMangoImg from '../../assets/images/kesar.webp';
 import rajapuriMangoImg from '../../assets/images/Rajapuri-Mango.webp';
 import langdoMangoImg from '../../assets/images/langdo-mango.webp';
-import dasheriMangoImg from '../../assets/images/dasheri-mango.jpg';
-const MangoVarieties = ({ onOrderClick = () => {} }) => {
+import dasheriMangoImg from '../../assets/images/dasheri-mango.webp';
+const MangoVarieties = ({ onOrderClick = () => { } }) => {
   const varieties = [
     {
       id: 1,

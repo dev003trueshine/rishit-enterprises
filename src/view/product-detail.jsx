@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { Tabs, Tab, Offcanvas, Form, Button } from "react-bootstrap";
 import Icon from "components/ui/AppIcon";
 import Slider from "react-slick";
-import slider1 from "../assets/images/mango.png";
-import slider2 from "../assets/images/banner.png";
+import slider1 from "../assets/images/mango.webp";
+import slider2 from "../assets/images/banner.webp";
 const ProductDetail = () => {
 
   const FeatureItem = [

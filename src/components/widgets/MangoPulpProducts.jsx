@@ -1,6 +1,6 @@
 import AppImage from "components/ui/AppImage";
 import Icon from "components/ui/AppIcon";
-import mangoPulpImg from '../../assets/images/mango-pulp.jpeg';
+import mangoPulpImg from '../../assets/images/mango-pulp.webp';
 const MangoPulpProducts = ({ onOrderClick }) => {
   const pulpProducts = [
     // {

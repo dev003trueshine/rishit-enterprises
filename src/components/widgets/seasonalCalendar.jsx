@@ -105,7 +105,7 @@ export default function SeasonalCalendar() {
         <div className="text-center mb-12">
           <div className="d-inline-flex align-items-center gap-2 px-3 py-2 bg-secondary-subtle rounded-pill mb-3">
             <Icon name="CalendarDaysIcon" size={20} className="text-secondary" variant="solid" />
-            <span className="fw-semibold text-sm text-warningtext-uppercase tracking-wide">Seasonal Guide</span>
+            <span className="h6 fw-semibold text-sm text-secondary m-0 text-uppercase tracking-wide">Seasonal Guide</span>
           </div>
           <h2 className="fw-bold text-5xl mb-3">What's Fresh This Month</h2>
           <p className="max-w-2xl mx-auto my-0">Plan your orders with our seasonal availability calendar</p>

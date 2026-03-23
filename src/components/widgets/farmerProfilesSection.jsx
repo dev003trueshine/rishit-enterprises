@@ -2,9 +2,9 @@ import React from "react";
 import AppImage from "components/ui/AppImage";
 import Icon from "components/ui/AppIcon";
 
-import img1 from "../../assets/images/dahyabhai.png";
-import img2 from "../../assets/images/mohanbhai.png";
-import img3 from "../../assets/images/nanubhai.png";
+import img1 from "../../assets/images/dahyabhai.webp";
+import img2 from "../../assets/images/mohanbhai.webp";
+import img3 from "../../assets/images/nanubhai.webp";
 
 export default function FarmerProfilesSection({ className = "" }) {
   const farmers = [

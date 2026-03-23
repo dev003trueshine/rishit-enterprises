@@ -1,6 +1,7 @@
 import React from "react";
 import AppImage from "components/ui/AppImage"; // adjust path if needed
 import Icon from "components/ui/AppIcon";
+import mangoPulpImg from "../../assets/images/mango-pulp.webp";
 
 const handleWhatsAppClick = () => {
   const message = encodeURIComponent(
@@ -8,7 +9,7 @@ const handleWhatsAppClick = () => {
   );
   window.open(`https://wa.me/8238157599?text=${message}`, "_blank");
 };
-export default function MangoHero({  onWhatsAppClick = handleWhatsAppClick }) {
+export default function MangoHero({ onWhatsAppClick = handleWhatsAppClick }) {
   const features = [
     { icon: "CheckBadgeIcon", text: "Farm-Direct Quality" },
     { icon: "TruckIcon", text: "Fast Delivery" },
@@ -95,7 +96,7 @@ export default function MangoHero({  onWhatsAppClick = handleWhatsAppClick }) {
           <div className="relative">
             <div className="relative aspect-square rounded-2xl overflow-hidden shadow-lg">
               <AppImage
-                src="https://img.rocket.new/generatedImages/rocket_gen_img_194fd7d5e-1765212527574.png"
+                src={mangoPulpImg}
                 alt="Fresh ripe Alphonso mangoes arranged in wooden basket with green leaves on rustic farm table"
                 className="w-full h-full object-cover"
               />

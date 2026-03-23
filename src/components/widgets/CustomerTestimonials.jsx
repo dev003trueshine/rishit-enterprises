@@ -1,69 +1,69 @@
 import Icon from "components/ui/AppIcon";
 
 const CustomerTestimonials = () => {
-const testimonials = [
-  {
-    id: 1,
-    text: "રિષિત એન્ટરપ્રાઇઝની કેસર કેરીની ક્વોલિટી અને સ્વાદ ખરેખર લાજવાબ છે. પેકિંગ ઘણું મજબૂત હતું અને દરેક фળ એકદમ તાજું અને કુદરતી રીતે પાકેલું મળ્યું.",
-    product: "પ્રીમિયમ કેસર કેરી - 20 kg",
-    name: "ભાવનાબેન પટેલ",
-    rating: 5,
-    location: "ચીખલી, ગુજરાત",
-  },
+  const testimonials = [
+    {
+      id: 1,
+      text: "રિષિત એન્ટરપ્રાઇઝની કેસર કેરીની ક્વોલિટી અને સ્વાદ ખરેખર લાજવાબ છે. પેકિંગ ઘણું મજબૂત હતું અને દરેક ફળ એકદમ તાજું અને કુદરતી રીતે પાકેલું મળ્યું.",
+      product: "પ્રીમિયમ કેસર કેરી - 20 kg",
+      name: "ભાવનાબેન પટેલ",
+      rating: 5,
+      location: "ચીખલી, ગુજરાત",
+    },
 
-  {
-    id: 2,
-    text: "મેં દાહોદમાં મારા પરિવાર માટે કેરી મંગાવી હતી. રિષિત એન્ટરપ્રાઇઝનો માલ એકદમ તાજો હતો અને ડિલિવરી પણ સમયસર મળી ગઈ.",
-    product: "કેસર કેરી - 10 kg",
-    name: "રાજेश પંચાલ",
-    rating: 5,
-    location: "દાહોદ, ગુજરાત",
-  },
-  {
-    id: 3,
-    text: "ગોધરામાં આટલા સરસ ચીકુ બીજે ક્યાંય નથી મળતા. રિષિત એન્ટરપ્રાઇઝની સર્વિસ અને ક્વોલિટી બંને બહુ જ સરસ છે.",
-    product: "તાજા ચીકુ",
-    name: "નરેશભાઈ",
-    rating: 5,
-    location: "ગોધરા, ગુજરાત",
-  },
-  { 
-    id: 4,
-    text: "લુણાવાડામાં અમને રિષિત એન્ટરપ્રાઇઝ તરફથી ખૂબ જ સારા ફ્રુટ્સ મળ્યા. ફળની મીઠાશ કુદરતી છે, જરૂરથી ફરી ઓર્ડર કરીશ.",
-    product: "કેરી ",
-    name: "હિતેશ શાહ",
-    rating: 5,
-    location: "લુણાવાડા, ગુજરાત",
-  },
+    {
+      id: 2,
+      text: "મેં દાહોદમાં મારા પરિવાર માટે કેરી મંગાવી હતી. રિષિત એન્ટરપ્રાઇઝનો માલ એકદમ તાજો હતો અને ડિલિવરી પણ સમયસર મળી ગઈ.",
+      product: "કેસર કેરી - 10 kg",
+      name: "રાજેશ પંચાલ",
+      rating: 5,
+      location: "દાહોદ, ગુજરાત",
+    },
+    {
+      id: 3,
+      text: "ગોધરામાં આટલા સરસ ચીકુ બીજે ક્યાંય નથી મળતા. રિષિત એન્ટરપ્રાઇઝની સર્વિસ અને ક્વોલિટી બંને બહુ જ સરસ છે.",
+      product: "તાજા ચીકુ",
+      name: "નરેશભાઈ",
+      rating: 5,
+      location: "ગોધરા, ગુજરાત",
+    },
+    {
+      id: 4,
+      text: "લુણાવાડામાં અમને રિષિત એન્ટરપ્રાઇઝ તરફથી ખૂબ જ સારા ફ્રુટ્સ મળ્યા. ફળની મીઠાશ કુદરતી છે, જરૂરથી ફરી ઓર્ડર કરીશ.",
+      product: "કેરી ",
+      name: "હિતેશ શાહ",
+      rating: 5,
+      location: "લુણાવાડા, ગુજરાત",
+    },
 
-  // HINDI - Personal Experience
-  {
-    id: 5,
-    text: "अहमदाबाद में Rishit Enterprise से मंगाए गए फल एकदम ताजे थे। घर के सभी लोगों को चिकू का स्वाद बहुत पसंद आया।",
-    product: "प्रीमियम चिकू",
-    name: "मनीष प्रजापति",
-    rating: 5,
-    location: "अहमदाबाद, गुजरात",
-  },
-  {
-    id: 6,
-    text: "बड़ौदा में हमने पहली बार Rishit Enterprise से ऑर्डर किया और क्वालिटी देख कर बहुत खुश हुए। डिलीवरी बहुत फ़ास्ट है।",
-    product: "ताजी केसर कैरी",
-    name: "संजय भाई",
-    rating: 5,
-    location: "वडोदरा (Baroda)",
-  },
+    // HINDI - Personal Experience
+    {
+      id: 5,
+      text: "अहमदाबाद में Rishit Enterprise से मंगाए गए फल एकदम ताजे थे। घर के सभी लोगों को चिकू का स्वाद बहुत पसंद आया।",
+      product: "प्रीमियम चिकू",
+      name: "मनीष प्रजापति",
+      rating: 5,
+      location: "अहमदाबाद, गुजरात",
+    },
+    {
+      id: 6,
+      text: "बड़ौदा में हमने पहली बार Rishit Enterprise से ऑर्डर किया और क्वालिटी देख कर बहुत खुश हुए। डिलीवरी बहुत फ़ास्ट है।",
+      product: "ताजी केसर कैरी",
+      name: "संजय भाई",
+      rating: 5,
+      location: "वडोदरा (Baroda)",
+    },
 
-  // ENGLISH - Personal Experience
-  {
-    id: 7,
-    text: "Excellent service from Rishit Enterprise. The fruits delivered in Delhi were as fresh as if they were just picked from the farm. Highly recommended!",
-    product: "Premium Fruit Box",
-    name: "Sunil Khanna",
-    rating: 5,
-    location: "Delhi, India",
-  }
-];
+    // ENGLISH - Personal Experience
+    {
+      id: 7,
+      text: "Excellent service from Rishit Enterprise. The fruits delivered in Delhi were as fresh as if they were just picked from the farm. Highly recommended!",
+      product: "Premium Fruit Box",
+      name: "Sunil Khanna",
+      rating: 5,
+      location: "Delhi, India",
+    }
+  ];
   const stats = [
     { icon: "UserGroupIcon", value: "500+", label: "Happy Customers" },
     { icon: "StarIcon", value: "5/5", label: "Average Rating" },

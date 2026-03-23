@@ -2,9 +2,9 @@ import React from "react";
 import Slider from "react-slick";
 import Icon from "components/ui/AppIcon";
 
-import slide1 from "../../assets/images/banner.png";
-import slide2 from "../../assets/images/chiku-banner.png";
-import slide3 from "../../assets/images/mango-plup-banner.png";
+import slide1 from "../../assets/images/banner.webp";
+import slide2 from "../../assets/images/chiku-banner.webp";
+import slide3 from "../../assets/images/mango-plup-banner.webp";
 
 const slides = [
   {
@@ -15,9 +15,9 @@ const slides = [
   },
   {
     bg: slide2,
-    title: "Farm Fresh Chiku",
+    title: "Farm Fresh Chikoo",
     subtitle: "Sweet & Juicy",
-    desc: "Delicious chiku fruits picked at peak ripeness for the best taste and nutrition.",
+    desc: "Delicious Chikoo fruits picked at peak ripeness for the best taste and nutrition.",
   },
   {
     bg: slide3, title: "Organic Mango Pulps",

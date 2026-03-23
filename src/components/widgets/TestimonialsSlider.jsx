@@ -4,7 +4,7 @@ import Icon from 'components/ui/AppIcon';
 
 const testimonials = [
   {
-    text: "રિષિત એન્ટરપ્રાઇઝની કેસર કેરીની ક્વોલિટી અને સ્વાદ ખરેખર લાજવાબ છે. પેકિંગ ઘણું મજબૂત હતું અને દરેક фળ એકદમ તાજું અને કુદરતી રીતે પાકેલું મળ્યું.",
+    text: "રિષિત એન્ટરપ્રાઇઝની કેસર કેરીની ક્વોલિટી અને સ્વાદ ખરેખર લાજવાબ છે. પેકિંગ ઘણું મજબૂત હતું અને દરેક ફળ એકદમ તાજું અને કુદરતી રીતે પાકેલું મળ્યું.",
     product: "પ્રીમિયમ કેસર કેરી - 20 kg",
     name: "ભાવનાબેન પટેલ",
     location: "ચીખલી, ગુજરાત",
@@ -72,7 +72,7 @@ const TestimonialsSlider = () => {
         <div className="text-center mb-12">
           <div className="d-inline-flex align-items-center gap-2 px-4 py-2 bg-warning-subtle text-warning rounded-full mb-3 svg-bg-warning">
             <Icon name="ChatBubbleLeftEllipsisIcon" size={20} className="text-warning" variant="solid" />
-            <span className="fw-semibold text-sm text-warningtext-uppercase tracking-wide">
+            <span className="h6 fw-semibold text-sm text-warning m-0 text-uppercase tracking-wide">
               Customer Stories
             </span>
           </div>

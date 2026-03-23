@@ -1,6 +1,6 @@
 import AppImage from "components/ui/AppImage";
 import Icon from "components/ui/AppIcon";
-import img1 from "../../assets/images/green-mango.jpg";
+import img1 from "../../assets/images/green-mango.webp";
 const RipenessGuide = () => {
   const ripenessStages = [
     {

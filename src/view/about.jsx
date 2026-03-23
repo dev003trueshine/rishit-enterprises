@@ -1,5 +1,5 @@
 import React from "react";
-import mango from "../assets/images/banner-logo.png";
+import mango from "../assets/images/banner-logo.webp";
 import Icon from "components/ui/AppIcon";
 
 import Timeline from "../components/widgets/timeline.jsx";
@@ -8,6 +8,7 @@ import FarmingPracticesSection from "../components/widgets/farmingPracticesSecti
 import CertificationsSection from "../components/widgets/certificationsSection.jsx";
 import CTASection from "../components/widgets/CTASection";
 import TestimonialsSlider from "../components/widgets/TestimonialsSlider.jsx";
+import mangoFarmImg from "../assets/images/mango-farm.webp";
 
 const About = () => {
     return (
@@ -15,7 +16,7 @@ const About = () => {
             {/* hero section */}
             <section className="position-relative">
                 <img
-                    src="https://img.rocket.new/generatedImages/rocket_gen_img_117f77560-1765968270309.png"
+                    src={mangoFarmImg}
                     alt="Aerial view of lush green mango orchard with rows of healthy fruit trees under clear blue sky"
                     className="w-100 h-600px object-cover"
                     loading="eager"
@@ -33,7 +34,7 @@ const About = () => {
             <section className="py-24 bg-gray-900 ">
                 <div className="container mx-auto px-4">
                     <div className="d-grid lg-grid-cols-2 gap-12 align-items-center md-gap-16 gap-3 mb-16">
-                       <div>
+                        <div>
                             <h2 className="fw-bold text-4xl mb-4">From Our Orchards to Your Table</h2>
 
                             <div className="d-flex flex-column gap-3">

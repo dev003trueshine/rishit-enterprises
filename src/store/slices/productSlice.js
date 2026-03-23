@@ -1,11 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit';
-import chikoImg from '../../assets/images/chikoo.jpeg';
-import goldenMangoImg from '../../assets/images/golden-kesar-mango.jpeg';
-import kesarMangoImg from '../../assets/images/kesar.jpeg';
+import chikoImg from '../../assets/images/chikoo.webp';
+import goldenMangoImg from '../../assets/images/golden-kesar-mango.webp';
+import kesarMangoImg from '../../assets/images/kesar.webp';
 import rajapuriMangoImg from '../../assets/images/Rajapuri-Mango.webp';
 import langdoMangoImg from '../../assets/images/langdo-mango.webp';
-import dasheriMangoImg from '../../assets/images/dasheri-mango.jpg';
-import mangoPulpImg from '../../assets/images/mango-pulp.jpeg';
+import dasheriMangoImg from '../../assets/images/dasheri-mango.webp';
+import mangoPulpImg from '../../assets/images/mango-pulp-bottle.webp';
 // // 1. Create the async thunk for fetching products
 // export const fetchProducts = createAsyncThunk(
 //   'product/fetchProducts',
