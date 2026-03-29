@@ -29,7 +29,7 @@ const Header = ({ className = "" }) => {
       className={`w-full bg-card border-bottom position-sticky top-0 z-9 ${className}`}
     >
       <div className="container mx-auto px-4">
-        <div className="d-flex align-items-center justify-content-between h-20">
+        <div className="d-flex align-items-center justify-content-between h-20 gap-2">
           {/* Logo Section */}
           <a
             href="/"
@@ -83,7 +83,7 @@ const Header = ({ className = "" }) => {
             {/* WhatsApp CTA */}
             <button
               onClick={handleWhatsAppClick}
-              className="btn btn-success text-white d-flex align-items-center justify-content-center rounded-lg gap-2 px-4 py-2 animate-whatsapp-pulse"
+              className="btn btn-success text-white d-flex align-items-center justify-content-center rounded-lg gap-2 px-2 md:px-4 py-1 md:py-2 animate-whatsapp-pulse"
             >
               <Icon
                 name="ChatBubbleLeftRightIcon"
@@ -109,7 +109,7 @@ const Header = ({ className = "" }) => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <nav className="d-xl-none py-4 border-top animate-fade-in">
+          <nav className="d-xl-none py-4 border-top animate-fade-in min-vh-100 ">
             <div className="d-flex flex-column gap-3">
               {navigationItems.map((item) => {
                 const isActive = location.pathname === item.href;

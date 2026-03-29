@@ -62,7 +62,7 @@ const Footer = () => {
                 </svg>
               </div> */}
               <span className="fw-bold text-white text-xl mb-0">
-                Rishit Fruits
+                Rishit Enterprise
               </span>
             </div>
 
@@ -268,7 +268,7 @@ const Footer = () => {
         <div className="container mx-auto px-4">
           <div className="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
             <span className="text-sm text-white text-center">
-              © {currentYear} Rishit Fruits. All rights reserved. Farm Fresh
+              © {currentYear} Rishit Enterprise. All rights reserved. Farm Fresh
               Quality Guaranteed.
             </span>
 
