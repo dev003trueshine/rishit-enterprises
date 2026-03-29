@@ -2,51 +2,94 @@ import React from "react";
 import Icon from "components/ui/AppIcon";
 
 export default function FarmingPracticesSection({ className = "" }) {
+  // const practices = [
+  //   {
+  //     id: 1,
+  //     icon: "SparklesIcon",
+  //     title: "Organic Farming",
+  //     description:
+  //       "Zero chemical pesticides or synthetic fertilizers. We use natural compost, bio-fertilizers, and traditional pest management techniques.",
+  //   },
+  //   {
+  //     id: 2,
+  //     icon: "SunIcon",
+  //     title: "Natural Ripening",
+  //     description:
+  //       "All fruits ripen naturally on the tree. No artificial ripening agents like calcium carbide are ever used in our process.",
+  //   },
+  //   {
+  //     id: 3,
+  //     icon: "BeakerIcon",
+  //     title: "Soil Health",
+  //     description:
+  //       "Regular soil testing and crop rotation maintain nutrient balance. We use organic matter to improve soil structure and fertility.",
+  //   },
+  //   {
+  //     id: 4,
+  //     icon: "CloudIcon",
+  //     title: "Water Conservation",
+  //     description:
+  //       "Drip irrigation systems minimize water waste. Rainwater harvesting and mulching techniques preserve moisture naturally.",
+  //   },
+  //   {
+  //     id: 5,
+  //     icon: "ShieldCheckIcon",
+  //     title: "Integrated Pest Management",
+  //     description:
+  //       "Beneficial insects, neem-based solutions, and physical barriers protect crops without harmful chemicals.",
+  //   },
+  //   {
+  //     id: 6,
+  //     icon: "ArrowPathIcon",
+  //     title: "Sustainable Practices",
+  //     description:
+  //       "Composting farm waste, using renewable energy, and maintaining biodiversity for long-term farm health.",
+  //   },
+  // ];
   const practices = [
     {
       id: 1,
       icon: "SparklesIcon",
-      title: "Organic Farming",
+      title: "Desi Farming",
       description:
-        "Zero chemical pesticides or synthetic fertilizers. We use natural compost, bio-fertilizers, and traditional pest management techniques.",
+        "No chemical sprays or powders. We use only natural compost and old-school ways to keep our plants healthy.",
     },
     {
       id: 2,
       icon: "SunIcon",
-      title: "Natural Ripening",
+      title: "Patience is Key",
       description:
-        "All fruits ripen naturally on the tree. No artificial ripening agents like calcium carbide are ever used in our process.",
+        "We let our fruits ripen slowly on the tree under the sun. We never use chemicals or gas to rush them.",
     },
     {
       id: 3,
-      icon: "BeakerIcon",
-      title: "Soil Health",
+      icon: "HeartIcon", // Changed from BeakerIcon
+      title: "Healthy Soil",
       description:
-        "Regular soil testing and crop rotation maintain nutrient balance. We use organic matter to improve soil structure and fertility.",
+        "We keep our land fertile by adding natural cow dung and leaf mulch. Good soil makes for tasty, healthy food.",
     },
     {
       id: 4,
-      icon: "CloudIcon",
-      title: "Water Conservation",
+      icon: "CloudIcon", // Using simple words for water
+      title: "Saving Every Drop",
       description:
-        "Drip irrigation systems minimize water waste. Rainwater harvesting and mulching techniques preserve moisture naturally.",
+        "We use smart watering and save rainwater to make sure we don't waste what nature gives us.",
     },
     {
       id: 5,
       icon: "ShieldCheckIcon",
-      title: "Integrated Pest Management",
+      title: "Natural Protection",
       description:
-        "Beneficial insects, neem-based solutions, and physical barriers protect crops without harmful chemicals.",
+        "Instead of poisons, we use neem water and friendly insects to keep the bad bugs away from our crops.",
     },
     {
       id: 6,
       icon: "ArrowPathIcon",
-      title: "Sustainable Practices",
+      title: "Giving Back",
       description:
-        "Composting farm waste, using renewable energy, and maintaining biodiversity for long-term farm health.",
+        "Everything from the farm goes back into the farm. We turn waste into fertilizer to keep the land rich for years.",
     },
   ];
-
   return (
     <section className={`py-24 bg-card ${className}`}>
       <div className="container mx-auto px-4">

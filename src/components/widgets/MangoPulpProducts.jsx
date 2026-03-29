@@ -57,6 +57,33 @@ const MangoPulpProducts = ({ onOrderClick }) => {
     // }
   ];
 
+  // const benefits = [
+  //   {
+  //     icon: "CheckBadgeIcon",
+  //     title: "100% Natural",
+  //     description: "No artificial colors, flavors, or preservatives added"
+  //   },
+  //   // {
+  //   //   icon: "BeakerIcon",
+  //   //   title: "Lab Tested",
+  //   //   description: "Quality certified and hygienically processed"
+  //   // },
+  //   {
+  //     icon: "HandThumbUpIcon", // Or "ClipboardDocumentCheckIcon"
+  //     title: "Quality Assured",
+  //     description: "Hand-picked and rigorously checked for premium quality"
+  //   },
+  //   {
+  //     icon: "ShieldCheckIcon",
+  //     title: "Sealed Fresh",
+  //     description: "packaging maintains freshness"
+  //   },
+  //   {
+  //     icon: "TruckIcon",
+  //     title: "Fast Delivery",
+  //     description: "Temperature-controlled shipping nationwide"
+  //   }
+  // ];
   const benefits = [
     {
       icon: "CheckBadgeIcon",
@@ -64,19 +91,19 @@ const MangoPulpProducts = ({ onOrderClick }) => {
       description: "No artificial colors, flavors, or preservatives added"
     },
     {
-      icon: "BeakerIcon",
-      title: "Lab Tested",
-      description: "Quality certified and hygienically processed"
+      icon: "HomeIcon", // Swapped to HomeIcon for a "local" feel
+      title: "Locally Sourced",
+      description: "Supporting local farmers and ensuring farm-to-table freshness"
     },
     {
       icon: "ShieldCheckIcon",
       title: "Sealed Fresh",
-      description: "Vacuum-sealed packaging maintains freshness"
+      description: "Secure packaging ensures your product arrives in perfect condition"
     },
     {
       icon: "TruckIcon",
       title: "Fast Delivery",
-      description: "Temperature-controlled shipping nationwide"
+      description: "Quick and reliable shipping to your doorstep nationwide"
     }
   ];
 

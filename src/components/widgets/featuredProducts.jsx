@@ -72,12 +72,12 @@ export default function FeaturedProducts({ onWhatsAppOrder }) {
                   </div>
                 )} */}
 
-                <div className="position-absolute star-badge px-3 z-5 py-1 bg-gray-900 rounded-pill fw-semibold text-xs text-heading text-uppercase shadow-organic d-flex align-items-center gap-1">
+                {/* <div className="position-absolute star-badge px-3 z-5 py-1 bg-gray-900 rounded-pill fw-semibold text-xs text-heading text-uppercase shadow-organic d-flex align-items-center gap-1">
                   <Icon name="StarIcon" size={16} className="text-warning" variant="solid" />
                   <span className="fw-bold text-sm text-heading">
                     {product.rating}
                   </span>
-                </div>
+                </div> */}
               </div>
 
               {/* Info */}

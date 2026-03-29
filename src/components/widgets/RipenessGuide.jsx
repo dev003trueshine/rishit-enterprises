@@ -23,7 +23,7 @@ const RipenessGuide = () => {
       firmness: "Firm with Slight Give",
       aroma: "Light Fruity Scent",
       bestFor: "Salads, Chutneys",
-      image: "https://img.rocket.new/generatedImages/rocket_gen_img_19520e2cd-1764831687012.png",
+      image: "https://img.rocket.new/generatedImages/rocket_gen_img_1953a6102-1764831688571.png",
       alt: "Half-ripe mangoes showing yellow-green color transition in basket",
       tips: [
         "Keep in paper bag to speed ripening",
@@ -37,7 +37,7 @@ const RipenessGuide = () => {
       firmness: "Yields to Gentle Pressure",
       aroma: "Strong Sweet Fragrance",
       bestFor: "Fresh Eating, Desserts",
-      image: "https://img.rocket.new/generatedImages/rocket_gen_img_1953a6102-1764831688571.png",
+      image: "https://img.rocket.new/generatedImages/rocket_gen_img_19520e2cd-1764831687012.png",
       alt: "Perfectly ripe golden yellow mangoes with sweet aroma on marble counter",
       tips: [
         "Consume within 2-3 days",

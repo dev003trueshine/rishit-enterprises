@@ -129,12 +129,20 @@ export default function ContactMethods({
               </p>
 
               {/* Contact Value */}
-              <div className="p-3 bg-body rounded-lg mb-4">
+              {/* <div className="p-3 bg-body rounded-lg mb-4">
                 <span className="fw-medium text-sm" style={{ lineBreak: "anywhere" }}>
                   {method.value}
                 </span>
+              </div> */}
+              {/* Contact Value */}
+              <div className="p-3 bg-body rounded-lg mb-4 d-flex justify-content-center align-items-center">
+                <span
+                  className="fw-medium text-sm text-center"
+                  style={{ whiteSpace: "pre-line", display: "block", width: "100%" }}
+                >
+                  {method.value}
+                </span>
               </div>
-
               {/* Button */}
               <button
                 onClick={() => handleAction(method.action)}

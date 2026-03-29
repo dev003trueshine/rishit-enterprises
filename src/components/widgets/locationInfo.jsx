@@ -17,7 +17,7 @@ export default function LocationInfo() {
     {
       icon: "PhoneIcon",
       label: "Schedule a Call",
-      value: "+91 8238157599",
+      value: "Vikas Patel : +91 82381 57599\nTejas Patel : +91 95582 87453\nChirag Patel : +91  82389 39658",
     },
   ];
 
@@ -70,7 +70,10 @@ export default function LocationInfo() {
                       <h3 className="fw-semibold text-lg mb-2">
                         {detail.label}
                       </h3>
-                      <p className="font-body text-muted-foreground">
+                      <p
+                        className="font-body text-muted-foreground"
+                        style={{ whiteSpace: 'pre-line' }}
+                      >
                         {detail.value}
                       </p>
                     </div>

@@ -17,26 +17,48 @@ export default function CertificationsSection({ className = "" }) {
     },
   ];
 
+  // const qualityPromises = [
+  //   {
+  //     icon: "CheckBadgeIcon",
+  //     title: "Freshness Guarantee",
+  //     description: "All fruits delivered within 24-48 hours of harvest",
+  //   },
+  //   {
+  //     icon: "ShieldCheckIcon",
+  //     title: "Quality Assurance",
+  //     description: "Multi-stage quality checks before packaging",
+  //   },
+  //   {
+  //     icon: "ArrowPathIcon",
+  //     title: "Easy Returns",
+  //     description: "Full refund if you're not satisfied with quality",
+  //   },
+  //   {
+  //     icon: "TruckIcon",
+  //     title: "Safe Delivery",
+  //     description: "Temperature-controlled transport for optimal freshness",
+  //   },
+  // ];
   const qualityPromises = [
     {
-      icon: "CheckBadgeIcon",
-      title: "Freshness Guarantee",
-      description: "All fruits delivered within 24-48 hours of harvest",
+      icon: "ClockIcon", // Changed for a "time/freshness" feel
+      title: "Farm to Door",
+      description: "We pick it from our trees and get it to you within 24-48 hours",
     },
     {
-      icon: "ShieldCheckIcon",
-      title: "Quality Assurance",
-      description: "Multi-stage quality checks before packaging",
+      icon: "HandThumbUpIcon",
+      title: "Hand-Picked",
+      description: "We check every single fruit by hand before it leaves our farm",
     },
     {
       icon: "ArrowPathIcon",
-      title: "Easy Returns",
-      description: "Full refund if you're not satisfied with quality",
+      title: "Our Promise",
+      description: "Not happy with the quality? We’ll make it right, no questions asked",
     },
     {
       icon: "TruckIcon",
-      title: "Safe Delivery",
-      description: "Temperature-controlled transport for optimal freshness",
+      title: "Careful Delivery",
+      description: "Packed with care and delivered fast to keep that farm-fresh taste",
     },
   ];
 

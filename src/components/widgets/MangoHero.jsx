@@ -86,7 +86,7 @@ export default function MangoHero({ onWhatsAppClick = handleWhatsAppClick }) {
                 </div>
               </div>
               <div>
-                <p className="fw-semibold text-heading m-0">2,500+ Happy Customers</p>
+                <p className="fw-semibold text-heading m-0">500+ Happy Customers</p>
                 <p className="text-sm m-0">This mango season</p>
               </div>
             </div>
