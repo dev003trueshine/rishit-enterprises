@@ -3,6 +3,8 @@ import React from 'react';
 import { Outlet } from 'react-router-dom'; // Placeholder for child pages
 import Header from '../components/partial/header.jsx';
 import Footer from '../components/partial/footer.jsx';
+import MobileBottomNav from '../components/common/MobileBottomNav/MobileBottomNav.jsx';
+
 const MainLayout = () => {
     return (
         <div className="wrapper">
@@ -15,6 +17,7 @@ const MainLayout = () => {
             </main>
             {/* 3. Footer is called here */}
             <Footer />
+            <MobileBottomNav />
         </div>
     );
 };

@@ -1,0 +1,63 @@
+.mobile-bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--bs-card-bg, #ffffff);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
+  z-index: 1060;
+  padding: 8px 0 env(safe-area-inset-bottom, 8px);
+  border-top: 1px solid var(--bs-border-color, #eee);
+
+  .nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--bs-body-color, #666);
+    flex: 1;
+    transition: all 0.3s ease;
+    gap: 4px;
+
+    .icon-wrapper {
+        padding: 6px 12px;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-label {
+      font-size: 11px;
+      font-weight: 500;
+    }
+
+    &.active {
+      color: var(--bs-primary);
+      
+      .icon-wrapper {
+        background: var(--bs-primary-bg-subtle, rgba(40, 167, 69, 0.1));
+      }
+
+      .nav-label {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+/* Adjust main content padding to prevent bottom nav coverage */
+@media (max-width: 1199.98px) {
+  body {
+    padding-bottom: 70px;
+  }
+}
