@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Icon from "components/ui/AppIcon";
 
 import logo from "../../assets/images/logo.webp";
@@ -7,9 +7,9 @@ import logo from "../../assets/images/logo.webp";
 
 const Header = ({ className = "" }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
+  const location = useLocation();
   const navigationItems = [
-    { label: "Home", href: "/", external: true },
+    { label: "Home", href: "/" },
     // { label: "Fruits Catalog", href: "/fruits-catalog" },
     { label: "Mango Products", href: "/mango-products" },
     { label: "Gallery", href: "/gallery" },
@@ -41,12 +41,13 @@ const Header = ({ className = "" }) => {
 
           {/* Desktop Navigation */}
           <nav className="d-none d-xl-flex align-items-center gap-5">
-            {navigationItems.map((item) => (
-              item.external ? (
+            {navigationItems.map((item) => {
+              const isActive = location.pathname === item.href;
+              return item.external ? (
                 <a
                   key={item.href}
                   href={item.href}
-                  className="header-link fw-medium  transition-organic position-relative group"
+                  className={`header-link fw-medium transition-organic position-relative group ${isActive ? "active" : ""}`}
                 >
                   {item.label}
                   <span className="hover-line"></span>
@@ -55,13 +56,13 @@ const Header = ({ className = "" }) => {
                 <Link
                   key={item.href}
                   to={item.href}
-                  className="header-link fw-medium  transition-organic position-relative group"
+                  className={`header-link fw-medium transition-organic position-relative group ${isActive ? "active" : ""}`}
                 >
                   {item.label}
                   <span className="hover-line"></span>
                 </Link>
-              )
-            ))}
+              );
+            })}
           </nav>
 
           {/* Right Section */}
@@ -75,7 +76,7 @@ const Header = ({ className = "" }) => {
                 variant="solid"
               />
               <span className="text-xs fw-medium text-body">
-                500+ Happy Families
+                1500+ Happy Families
               </span>
             </div>
 
@@ -110,16 +111,19 @@ const Header = ({ className = "" }) => {
         {isMobileMenuOpen && (
           <nav className="d-xl-none py-4 border-top animate-fade-in">
             <div className="d-flex flex-column gap-3">
-              {navigationItems.map((item) => (
-                <Link
-                  key={item.href}
-                  to={item.href}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="fw-medium px-4 py-3 rounded-lg transition-organic"
-                >
-                  {item.label}
-                </Link>
-              ))}
+              {navigationItems.map((item) => {
+                const isActive = location.pathname === item.href;
+                return (
+                  <Link
+                    key={item.href}
+                    to={item.href}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className={`fw-medium px-4 py-3 rounded-lg transition-organic ${isActive ? "bg-primary-subtle text-primary" : ""}`}
+                  >
+                    {item.label}
+                  </Link>
+                );
+              })}
 
               {/* Mobile Trust Badge */}
               <div className="flex items-center gap-2 px-4 py-3 bg-muted rounded-lg mt-2">
@@ -130,7 +134,7 @@ const Header = ({ className = "" }) => {
                   variant="solid"
                 />
                 <span className="text-sm font-medium text-muted-foreground">
-                  Trusted by 500+ Families
+                  Trusted by 1500+ Families
                 </span>
               </div>
             </div>

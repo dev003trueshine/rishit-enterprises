@@ -67,7 +67,7 @@ export default function ContactMethods({
       action: "instagram",
       actionLabel: "Follow Us",
       bgColor: "bg-secondary-subtle",
-      iconColor: "text-secondary",
+      iconColor: "w-10 h-10 text-secondary",
     },
     {
       id: "facebook",
@@ -79,7 +79,7 @@ export default function ContactMethods({
       action: "facebook",
       actionLabel: "Follow Us",
       bgColor: "bg-secondary-subtle",
-      iconColor: "text-secondary",
+      iconColor: "w-10 h-10 text-secondary",
     }
   ];
 

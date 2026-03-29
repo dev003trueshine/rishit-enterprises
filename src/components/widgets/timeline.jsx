@@ -21,12 +21,12 @@ const Timeline = () => {
   //   {
   //     year: '2025',
   //     title: 'Today',
-  //     description: 'Serving 500+ families with premium naturally ripened fruits'
+  //     description: 'Serving 1500+ families with premium naturally ripened fruits'
   //   },
   //     {
   //     year: '2026',
   //     title: 'Today',
-  //     description: 'Serving 500+ families with premium naturally ripened fruits'
+  //     description: 'Serving 1500+ families with premium naturally ripened fruits'
   //   }
   // ];
   const milestones = [
@@ -38,7 +38,7 @@ const Timeline = () => {
     {
       year: '2025',
       title: 'Expanding the Orchard',
-      description: 'Introduced premium Navsari Chikoo to our collection, growing our community to over 500+ happy homes.'
+      description: 'Introduced premium Navsari Chikoo to our collection, growing our community to over 1500+ happy homes.'
     },
     {
       year: '2026',

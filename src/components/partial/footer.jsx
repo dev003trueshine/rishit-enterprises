@@ -240,7 +240,7 @@ const Footer = () => {
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://www.facebook.com/share/1CLUVReqtv/"
+                  href="https://www.facebook.com/rishitenterprise.fruit/"
                   className="text-white text-sm"
                 >
                   Rishit Enterprise

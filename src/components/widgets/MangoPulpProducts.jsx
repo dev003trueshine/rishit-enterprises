@@ -1,6 +1,6 @@
 import AppImage from "components/ui/AppImage";
 import Icon from "components/ui/AppIcon";
-import mangoPulpImg from '../../assets/images/mango-pulp.webp';
+import mangoPulpImg from '../../assets/images/mango-pulp-bottle.webp';
 const MangoPulpProducts = ({ onOrderClick }) => {
   const pulpProducts = [
     // {
@@ -125,7 +125,7 @@ const MangoPulpProducts = ({ onOrderClick }) => {
         </div>
 
         {/* Products Grid */}
-        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 justify-content-center gy-4 mb-12">
+        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center gy-4 mb-12">
           {pulpProducts.map((product) => (
             <div key={product.id} className="col">
               <div

@@ -1,6 +1,6 @@
-
 .header-link {
   color: var(--bs-heading-color);
+
   /* hidden line initially */
   .hover-line {
     position: absolute;
@@ -22,6 +22,10 @@
 
   &.active {
     color: var(--bs-primary);
+
+    .hover-line {
+      width: 100%;
+    }
   }
 }
 

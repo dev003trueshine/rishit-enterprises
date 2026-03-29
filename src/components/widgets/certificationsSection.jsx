@@ -66,17 +66,17 @@ export default function CertificationsSection({ className = "" }) {
     <section className={`py-24 bg-body ${className}`}>
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-16">
+        {/* <div className="text-center mb-16">
           <h2 className="fw-bold text-4xl mb-3">
             Certifications & Quality Promise
           </h2>
           <p className="text-lg max-w-2xl mx-auto">
             Recognized excellence in organic farming and food safety standards
           </p>
-        </div>
+        </div> */}
 
         {/* Certifications Grid */}
-        <div className="row gy-4">
+        {/* <div className="row gy-4">
           {certifications.map((cert) => (
             <div className="col-lg-10 col-12 mx-auto">
               <div
@@ -125,7 +125,7 @@ export default function CertificationsSection({ className = "" }) {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
 
         {/* Quality Promises */}
         <div className="bg-primary-05 rounded-lg p-12">
