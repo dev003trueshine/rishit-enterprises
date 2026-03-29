@@ -38,7 +38,7 @@ const Timeline = () => {
     {
       year: '2025',
       title: 'Expanding the Orchard',
-      description: 'Introduced premium Navsari Chikoo to our collection, growing our community to over 1500+ happy homes.'
+      description: 'Introduced premium Navsari Chikoo to our collection, growing our community to over 500+ happy homes.'
     },
     {
       year: '2026',

@@ -5,7 +5,7 @@ const TrustBadges = () => {
     {
       id: 1,
       icon: 'CheckBadgeIcon',
-      title: '1500+ Happy Families',
+      title: '500+ Happy Families',
       description: 'Serving healthy smiles across India',
       color: 'text-success'
     },

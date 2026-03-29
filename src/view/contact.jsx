@@ -26,25 +26,25 @@ const Contact = () => {
   };
 
   const onFacebookClick = () => {
-    window.open("https://www.facebook.com/share/1CLUVReqtv/", "_blank");
+    window.open("https://www.facebook.com/rishitenterprise.fruit/", "_blank");
   };
 
-	return (
-		<>
-			<ContactHero />
-			<ContactMethods
-				handleWhatsAppClick={handleWhatsAppClick}
-				onPhoneClick={onPhoneClick}
-				onEmailClick={onEmailClick}
-				onInstagramClick={onInstagramClick}
-				onFacebookClick={onFacebookClick}
-			/>
-			<BusinessHours />
-			<LocationInfo />
-			{/* <FAQSection /> */}
-			{/* <ContactForm /> */}
-		</>
-	);
+  return (
+    <>
+      <ContactHero />
+      <ContactMethods
+        handleWhatsAppClick={handleWhatsAppClick}
+        onPhoneClick={onPhoneClick}
+        onEmailClick={onEmailClick}
+        onInstagramClick={onInstagramClick}
+        onFacebookClick={onFacebookClick}
+      />
+      <BusinessHours />
+      <LocationInfo />
+      {/* <FAQSection /> */}
+      {/* <ContactForm /> */}
+    </>
+  );
 };
 
 export default Contact;

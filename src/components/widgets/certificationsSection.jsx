@@ -1,21 +1,21 @@
 import React from "react";
 import Icon from "components/ui/AppIcon";
-import AppImage from "components/ui/AppImage";
-import certificateImg from "../../assets/images/certificate.webp";
+// import AppImage from "components/ui/AppImage";
+// import certificateImg from "../../assets/images/certificate.webp";
 
 export default function CertificationsSection({ className = "" }) {
-  const certifications = [
-    {
-      id: 1,
-      name: "FSSAI License",
-      issuer: "Food Safety Standards Authority",
-      year: "2026",
-      image: certificateImg,
-      alt: "FSSAI food safety license certificate with official seal and registration number",
-      description:
-        "Meets all food safety and hygiene standards for processing and packaging",
-    },
-  ];
+  // const certifications = [
+  //   {
+  //     id: 1,
+  //     name: "FSSAI License",
+  //     issuer: "Food Safety Standards Authority",
+  //     year: "2026",
+  //     image: certificateImg,
+  //     alt: "FSSAI food safety license certificate with official seal and registration number",
+  //     description:
+  //       "Meets all food safety and hygiene standards for processing and packaging",
+  //   },
+  // ];
 
   // const qualityPromises = [
   //   {

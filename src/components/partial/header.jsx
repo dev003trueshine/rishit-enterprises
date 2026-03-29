@@ -76,7 +76,7 @@ const Header = ({ className = "" }) => {
                 variant="solid"
               />
               <span className="text-xs fw-medium text-body">
-                1500+ Happy Families
+                500+ Happy Families
               </span>
             </div>
 
@@ -134,7 +134,7 @@ const Header = ({ className = "" }) => {
                   variant="solid"
                 />
                 <span className="text-sm font-medium text-muted-foreground">
-                  Trusted by 1500+ Families
+                  Trusted by 500+ Families
                 </span>
               </div>
             </div>

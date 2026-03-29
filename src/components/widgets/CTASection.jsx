@@ -25,7 +25,7 @@ export default function CTASection({ className = "" }) {
           </h2>
 
           <p className="text-xl text-white mb-5 max-w-2xl mx-auto leading-relaxed">
-            Join 1500+ families who trust Rishit Fruits for naturally ripened,
+            Join 500+ families who trust Rishit Fruits for naturally ripened,
             organic fruits delivered fresh from our farm to your doorstep
           </p>
 

@@ -49,7 +49,7 @@ export default function ContactHero() {
             </div>
             <div className="text-center border-start border-end border-2">
               <div className="text-4xl fw-bold text-primary mb-1">
-                1500+
+                500+
               </div>
               <div className="text-sm">Happy Customers</div>
             </div>
