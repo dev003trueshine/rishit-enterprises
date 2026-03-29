@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.32c7cd2b.css",
-    "main.js": "/static/js/main.e45ea2cf.js",
+    "main.js": "/static/js/main.fc1cc08c.js",
     "static/js/453.3bc75a4e.chunk.js": "/static/js/453.3bc75a4e.chunk.js",
     "static/media/2.webp": "/static/media/2.7a06e4daa8d53e1259aa.webp",
     "static/media/23.webp": "/static/media/23.6875654177043a904aa9.webp",
@@ -14,6 +14,8 @@
     "static/media/21.webp": "/static/media/21.fc85c1e8f58e5d7ddced.webp",
     "static/media/1.webp": "/static/media/1.e80da5987118f82a4764.webp",
     "static/media/10.webp": "/static/media/10.c3c11b2b3e96ceaf22ad.webp",
+    "static/media/27.webp": "/static/media/27.f7681e1a62b2b4cb2d08.webp",
+    "static/media/28.webp": "/static/media/28.550c2fc1d24fcd1c4ccb.webp",
     "static/media/25.webp": "/static/media/25.486fa617ebb6921e435a.webp",
     "static/media/chiku-banner.webp": "/static/media/chiku-banner.3bb6f4521e7313e6e8de.webp",
     "static/media/12.webp": "/static/media/12.61ac774dfbb7e9357163.webp",
@@ -55,11 +57,11 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.32c7cd2b.css.map": "/static/css/main.32c7cd2b.css.map",
-    "main.e45ea2cf.js.map": "/static/js/main.e45ea2cf.js.map",
+    "main.fc1cc08c.js.map": "/static/js/main.fc1cc08c.js.map",
     "453.3bc75a4e.chunk.js.map": "/static/js/453.3bc75a4e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.32c7cd2b.css",
-    "static/js/main.e45ea2cf.js"
+    "static/js/main.fc1cc08c.js"
   ]
 }
