@@ -1,10 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.32c7cd2b.css",
-    "main.js": "/static/js/main.6ae3307d.js",
+    "main.js": "/static/js/main.3a0deb86.js",
     "static/js/453.3bc75a4e.chunk.js": "/static/js/453.3bc75a4e.chunk.js",
+    "static/media/reel2.mp4": "/static/media/reel2.220e3367f85275d774d0.mp4",
     "static/media/2.webp": "/static/media/2.7a06e4daa8d53e1259aa.webp",
     "static/media/23.webp": "/static/media/23.6875654177043a904aa9.webp",
+    "static/media/reel1.mp4": "/static/media/reel1.aad9fd81f59acdaa1d50.mp4",
     "static/media/5.webp": "/static/media/5.dfde503a21a896a748d0.webp",
     "static/media/24.webp": "/static/media/24.fb03b5eb23ab5dc6c0f3.webp",
     "static/media/26.webp": "/static/media/26.78bb31f4079bbadf2674.webp",
@@ -15,6 +17,7 @@
     "static/media/1.webp": "/static/media/1.e80da5987118f82a4764.webp",
     "static/media/10.webp": "/static/media/10.c3c11b2b3e96ceaf22ad.webp",
     "static/media/27.webp": "/static/media/27.f7681e1a62b2b4cb2d08.webp",
+    "static/media/33.webp": "/static/media/33.0bc7205251736411ce61.webp",
     "static/media/28.webp": "/static/media/28.550c2fc1d24fcd1c4ccb.webp",
     "static/media/25.webp": "/static/media/25.486fa617ebb6921e435a.webp",
     "static/media/chiku-banner.webp": "/static/media/chiku-banner.3bb6f4521e7313e6e8de.webp",
@@ -23,15 +26,21 @@
     "static/media/kesar.webp": "/static/media/kesar.6caea3f5cb08bd19c514.webp",
     "static/media/green-mango.webp": "/static/media/green-mango.189d323d5de0be4aa043.webp",
     "static/media/9.webp": "/static/media/9.7d3b11459a3eeef8250e.webp",
+    "static/media/32.webp": "/static/media/32.3bc7a5115ca03f37cc9c.webp",
     "static/media/18.webp": "/static/media/18.25dc571bc56123c631c6.webp",
     "static/media/mango-farm.webp": "/static/media/mango-farm.17f912e5859a1056baf7.webp",
+    "static/media/30.webp": "/static/media/30.79390b168cda4abff593.webp",
+    "static/media/34.webp": "/static/media/34.0cb98d12d0c9bf2bd118.webp",
+    "static/media/31.webp": "/static/media/31.a5435ff9bdd6b37a372c.webp",
     "static/media/4.webp": "/static/media/4.ab980900632987f5c164.webp",
     "static/media/mango-plup-banner.webp": "/static/media/mango-plup-banner.1fe1aaad2853ec3a7656.webp",
     "static/media/8.webp": "/static/media/8.42fed50f79e8f9586f5a.webp",
     "static/media/13.webp": "/static/media/13.0a78a12f1ca72f0bcc49.webp",
     "static/media/banner-logo.webp": "/static/media/banner-logo.e3bc024356aa98f85af3.webp",
+    "static/media/29.webp": "/static/media/29.ed0efdd5a71aa72d6c61.webp",
     "static/media/6.webp": "/static/media/6.422d6251a75c6c420876.webp",
     "static/media/dahyabhai.webp": "/static/media/dahyabhai.af540b4f92f8aa06206f.webp",
+    "static/media/fassi.png": "/static/media/fassi.0b2dc41f26f347adf741.png",
     "static/media/nanubhai.webp": "/static/media/nanubhai.476ab30dcb0fe08ab1c2.webp",
     "static/media/Rajapuri-Mango.webp": "/static/media/Rajapuri-Mango.eecd4dcdcb4013b64b8d.webp",
     "static/media/chikoo.webp": "/static/media/chikoo.0cb1893a1f04edc732d6.webp",
@@ -57,11 +66,11 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.32c7cd2b.css.map": "/static/css/main.32c7cd2b.css.map",
-    "main.6ae3307d.js.map": "/static/js/main.6ae3307d.js.map",
+    "main.3a0deb86.js.map": "/static/js/main.3a0deb86.js.map",
     "453.3bc75a4e.chunk.js.map": "/static/js/453.3bc75a4e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.32c7cd2b.css",
-    "static/js/main.6ae3307d.js"
+    "static/js/main.3a0deb86.js"
   ]
 }

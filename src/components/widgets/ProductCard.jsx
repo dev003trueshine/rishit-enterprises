@@ -37,6 +37,11 @@ const ProductCard = ({ product, onWhatsAppOrder }) => {
 
         {/* Badges */}
         <div className="position-absolute premium-badge">
+          {product.badge && (
+            <span className="px-3 z-5 py-1 bg-primary rounded-pill fw-semibold text-xs text-white text-uppercase shadow-organic d-flex align-items-center gap-1">
+              <FaCheckCircle /> {product.badge}
+            </span>
+          )}
           {product.organic && (
             <span className="px-3 z-5 py-1 bg-success rounded-pill fw-semibold text-xs text-white text-uppercase shadow-organic d-flex align-items-center gap-1">
               <FaCheckCircle /> Organic

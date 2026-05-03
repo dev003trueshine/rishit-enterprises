@@ -44,7 +44,7 @@ const initialState = {
             "badge": "Seasonal",
             "rating": 4.8,
             "reviews": 189,
-            "inStock": false
+            "inStock": true
         },
         {
             "id": 3,
@@ -56,7 +56,7 @@ const initialState = {
             "alt": "Large green and red Rajapuri mangoes",
             "rating": 4.5,
             "reviews": 0,
-            "inStock": false
+            "inStock": true
         },
         {
             "id": 4,

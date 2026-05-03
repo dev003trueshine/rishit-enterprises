@@ -17,13 +17,13 @@ const FruitsCatalog = () => {
 	const mockProducts = [
 		{
 			id: 1,
-			name: "Alphonso Mango",
+			name: "Kesar Mango",
 			category: "mangoes",
 			price: 100,
 			unit: "kg",
 			image: "https://img.rocket.new/generatedImages/rocket_gen_img_17fcb1924-1764752495265.png",
-			alt: "Fresh ripe Alphonso mangoes with golden yellow skin on wooden surface",
-			description: "Premium Alphonso mangoes from Ratnagiri, naturally ripened with rich, sweet flavor and smooth texture.",
+			alt: "Fresh ripe Kesar mangoes with golden yellow skin on wooden surface",
+			description: "Premium Kesar mangoes from Ratnagiri, naturally ripened with rich, sweet flavor and smooth texture.",
 			inStock: true,
 			organic: true,
 			seasonal: true,
@@ -31,7 +31,8 @@ const FruitsCatalog = () => {
 			rating: 5,
 			reviews: 156,
 			minQuantity: 10,
-			quantityStep: 10
+			quantityStep: 10,
+			badge: "In Stock"
 		},
 		{
 			id: 2,
@@ -49,7 +50,8 @@ const FruitsCatalog = () => {
 			rating: 4.7,
 			reviews: 98,
 			minQuantity: 10,
-			quantityStep: 10
+			quantityStep: 10,
+			badge: "In Stock"
 		},
 		{
 			id: 3,
